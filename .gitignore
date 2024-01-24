@@ -2,6 +2,5 @@
 node_modules/
 public/
 .deploy*/
-.idea/*
-db.json
-public/
+.idea/
+db.jsonpublic/
