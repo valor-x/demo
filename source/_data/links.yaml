@@ -1,0 +1,53 @@
+links:
+  - class_name: 推荐
+    descr: 博主关注的博客
+    type: card
+    link_list:
+      - name: 王卓Sco
+        link: https://blog.wzsco.top/
+        avatar: https://bu.dusays.com/2024/01/24/65b10b4771c0d.png
+        descr: 宁静致远，热爱生活。
+        topimg: https://bu.dusays.com/2024/01/24/65b10b61d3977.png
+        tag: 开发者
+        color: vip
+      - name: 张洪Heo
+        link: https://blog.zhheo.com/
+        avatar: https://bu.dusays.com/2024/01/24/65b10b74d2b70.png
+        descr: 分享设计与科技生活
+        topimg: https://bu.dusays.com/2024/01/24/65b10b86c2d1c.png
+        tag: 设计师
+        color: vip
+      - name: 亦小封
+        link: https://blog.meuicat.cn/
+        tag: 亦封
+        descr: 胶片和文字都能记录生活.
+        color: vip
+        avatar: https://bu.dusays.com/2024/01/24/65b10b969810a.png
+        topimg: https://bu.dusays.com/2024/01/24/65b10b969810a.png
+
+  - class_name: 技术
+    descr: 技术博客
+    type: item
+    link_list:
+      - name: 王卓Sco
+        link: https://blog.wzsco.top/
+        avatar: https://bu.dusays.com/2024/01/24/65b10b4771c0d.png
+        descr: 宁静致远，热爱生活。
+        tag: 开发者
+        color: vip
+      - name: 亦小封
+        link: https://blog.meuicat.cn/
+        tag: 亦封
+        descr: 胶片和文字都能记录生活.
+        color: vip
+        avatar: https://bu.dusays.com/2024/01/24/65b10b969810a.png
+  - class_name: 生活
+    descr: 生活博客
+    type: item
+    link_list:
+      - name: 张洪Heo
+        link: https://blog.zhheo.com/
+        avatar: https://bu.dusays.com/2024/01/24/65b10b74d2b70.png
+        descr: 分享设计与科技生活
+        tag: 设计师
+        color: speed

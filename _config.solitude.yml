@@ -34,10 +34,10 @@ site:
   icon: https://bu.dusays.com/2023/11/08/654af68b25bb8.jpg
   # ICP 例如：湘ICP备2023015327号
   # ICP, for example: 湘ICP备2023015327号
-  icp: 
+  icp:
   # ICP链接 例如：http://www.beian.miit.gov.cn/
   # ICP link, for example: http://www.beian.miit.gov.cn/
-  icp_url: 
+  icp_url:
 
 # 导航栏
 # navigation bar
@@ -51,21 +51,21 @@ nav:
     # 导航栏显示的内容
     # Content displayed in the navigation bar
     menu:
-  #      # 显示分类名
-  #      # Display category name
+      #      # 显示分类名
+      #      # Display category name
       项目:
-         # 显示子类
-         # Display subcategories
-         Solitude:
-           # 显示的图标
-           # Displayed icon
-           icon: https://bu.dusays.com/2023/11/08/654af68b25bb8.jpg
-           # 点击的跳转链接
-           # Click the jump link
-           url: https://github.com/DuoSco/Hexo-Theme-solitude
+        # 显示子类
+        # Display subcategories
+        Solitude:
+          # 显示的图标
+          # Displayed icon
+          icon: https://bu.dusays.com/2023/11/08/654af68b25bb8.jpg
+          # 点击的跳转链接
+          # Click the jump link
+          url: https://github.com/wleelw/Hexo-Theme-solitude
       我的:
         个人主页:
-          icon: https://p.wzsco.top/97b503a253f6611157d0fbab92b3847e.png/cover.mini
+          icon: https://bu.dusays.com/2024/01/24/65b10e5e2e8ee.png
           url: https://wzsco.top/
 
   # 导航栏内容
@@ -73,56 +73,59 @@ nav:
   # tip：此部分内容是顶部导航栏中间菜单区域
   # tip: This part of the content is the menu area in the middle of the top navigation bar
   menu:
-  # 显示的大分类名称
-  # Displayed category name
+    # 显示的大分类名称
+    # Displayed category name
     文库:
-       # 点击跳转链接
-       # Click the jump link
-       # tip：如果没有子类就填跳转链接，例如：/archives，否则填false
-       # tip: If there is no subcategory, fill in the jump link, for example: /archives, otherwise fill in false
-       url: false
-       # 子类数组
-       # Subcategory array
-       child:
-         # 子类名称
-         # Subcategory name
-         文章列表:
-           # 点击跳转链接
-           # Click the jump link
-           url: /archives/
-           # 子类名称左侧图标
-           # Subcategory name left icon
-           icon: sco-folder-fill
-         全部分类:
-           url: /categories/
-           icon: sco-checkbox-multiple-blank-fill
-         全部标签:
-           url: /tags/
-           icon: sco-price-tag-fill
+      # 点击跳转链接
+      # Click the jump link
+      # tip：如果没有子类就填跳转链接，例如：/archives，否则填false
+      # tip: If there is no subcategory, fill in the jump link, for example: /archives, otherwise fill in false
+      url: false
+      # 子类数组
+      # Subcategory array
+      child:
+        # 子类名称
+        # Subcategory name
+        文章列表:
+          # 点击跳转链接
+          # Click the jump link
+          url: /archives/
+          # 子类名称左侧图标
+          # Subcategory name left icon
+          icon: sco-folder-fill
+        全部分类:
+          url: /categories/
+          icon: sco-checkbox-multiple-blank-fill
+        全部标签:
+          url: /tags/
+          icon: sco-price-tag-fill
     友链:
-         url: false
-         child:
-           友情链接:
-             url: /links/
-             icon: sco-group-fill
-           宝藏博主:
-             url: javascript:travelling()
-             icon: sco-gift-fill
+      url: false
+      child:
+        友情链接:
+          url: /links/
+          icon: sco-group-fill
+        宝藏博主:
+          url: javascript:travelling()
+          icon: sco-gift-fill
     我的:
-         url: false
-         child:
-           装备:
-             url: /equipment/
-             icon: sco-laptop-line
-           工具箱:
-             url: /tlink/
-             icon: sco-tools-fill
-    关于:
-         url: false
-         child:
-           关于本站:
-             url: /about/
-             icon: sco-contacts-fill
+      url: false
+      child:
+#        装备:
+#          url: /equipment/
+#          icon: sco-laptop-line
+#        工具箱:
+#          url: /tlink/
+#          icon: sco-tools-fill
+        音乐馆:
+          url: /music/
+          icon: sco-disc-fill
+#    关于:
+#      url: false
+#      child:
+#        关于本站:
+#          url: /about/
+#          icon: sco-contacts-fill
 
 
   # 导航栏右侧按钮
@@ -135,11 +138,11 @@ nav:
     # 从左至右
     # From left to right
     custom:
-     - name: 开往 - 友链接力 # 显示文字 / Displayed text
-       url: https://www.travellings.cn/go.html # 跳转链接 / Jump link
-       icon: sco-train-line # 图标 / Icon
-       onclick:  # 点击事件 / Click event
-       id: travellings_button # id
+      - name: 开往 - 友链接力 # 显示文字 / Displayed text
+        url: https://www.travellings.cn/go.html # 跳转链接 / Jump link
+        icon: sco-train-line # 图标 / Icon
+        onclick:  # 点击事件 / Click event
+        id: travellings_button # id
 
 # 首页顶部样式
 # Home top style
@@ -161,33 +164,33 @@ hometop:
     # 轮播icon
     # Carousel icon
     icon:
-    # 名字 / Name
-       HTML:
-         # 图片 / Image
-         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/HTML.png
-         # 背景色 / Background color
-         color: '#e9572b'
-       JS:
-         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/JS.png
-         color: '#f7cb4f'
-       Kotlin:
-         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/kotlin-logo.svg
-         color: '#ffffff'
-       Docker:
-         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/docker.png
-         color: '#57b6e6'
-       Flutter:
-         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/flutter.png
-         color: '#ffffff'
-       WebPack:
-         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/webpack.png
-         color: '#2e3a41'
-       Git:
-         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/git.png
-         color: '#df5b40'
-       VS:
-         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/vs-logo.svg
-         color: '#ffffff'
+      # 名字 / Name
+      HTML:
+        # 图片 / Image
+        img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/HTML.png
+        # 背景色 / Background color
+        color: '#e9572b'
+      JS:
+        img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/JS.png
+        color: '#f7cb4f'
+      Kotlin:
+        img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/kotlin-logo.svg
+        color: '#ffffff'
+      Docker:
+        img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/docker.png
+        color: '#57b6e6'
+      Flutter:
+        img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/flutter.png
+        color: '#ffffff'
+      WebPack:
+        img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/webpack.png
+        color: '#2e3a41'
+      Git:
+        img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/git.png
+        color: '#df5b40'
+      VS:
+        img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/vs-logo.svg
+        color: '#ffffff'
 
   # 顶部三大分类
   # Top three categories
@@ -231,7 +234,7 @@ hometop:
     url: https://docs.wzsco.top/
     # 显示背景图片
     # Display background image
-    img: https://p.wzsco.top/11de29fb5463da97a04c013046cb4e49.png/cover
+    img: https://bu.dusays.com/2024/01/24/65b11140b3a72.png
     # 阴影颜色
     # Shadow color
     color: '#006a73'
@@ -253,7 +256,7 @@ aside:
     noSticky: "about"
     # 不固定的信息（滑动跟随）
     # Unfixed information (sliding follow)
-    Sticky: "allInfo"
+    Sticky: "flip,allInfo"
   # 在文章页显示的侧边栏信息
   # Sidebar information displayed on the article page
   post:
@@ -292,31 +295,31 @@ aside:
     # 个人信息卡片底部的小图标，按照例子填写
     # Small icons at the bottom of the personal information card, fill in according to the example
     information:
-       # 悬停显示文字
-       Github:
-         # 图标
-         icon: scoicon sco-github-line
-         # 跳转链接
-         url: https://github.com/DuoSco/Hexo-Theme-slitude
-       Bilibili:
-         icon: scoicon sco-bilibili-line
-         url: https://space.bilibili.com/1329819902
+      # 悬停显示文字
+      Github:
+        # 图标
+        icon: scoicon sco-github-line
+        # 跳转链接
+        url: https://github.com/DuoSco/Hexo-Theme-slitude
+      Bilibili:
+        icon: scoicon sco-bilibili-line
+        url: https://space.bilibili.com/1329819902
 
   # 二维码
   # Official account QR code
   flip:
     # 右下角头像
     # Avatar in the lower right corner
-    favicon:
+    favicon: https://bu.dusays.com/2024/01/24/65b110134df35.png
     # 正面
     # Front
-    face:
+    face: https://bu.dusays.com/2024/01/24/65b110258f6db.png
     # 鼠标悬停翻转图片
     # Mouse hover flip image
-    backface:
+    backface: https://bu.dusays.com/2024/01/24/65b1103952e55.png
     # 夜间模式下是否开启卡片背景颜色 true：使用背景颜色 / false：不使用背景颜色
     # Whether to enable card background color in night mode true: use background color / false: do not use background color
-    darkcolor: false
+    darkcolor: true
 
   # 页面目录
   # Page directory
@@ -408,10 +411,10 @@ about: false
 # 开启后将显示即刻页面
 # After opening, the Jike page will be displayed
 says:
-  enable: false
+  enable: true
   # 主页的即刻轮播条
   # Jike carousel bar on the homepage
-  home_mini: false
+  home_mini: true
   # 1：张洪heo样式 / 2：Leonus样式
   # 1: Zhang Hong heo style / 2: Leonus style
   style: 1
@@ -432,10 +435,10 @@ meting_api: "https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth
 # 音乐馆页
 # music hall
 music:
-  enable: false
+  enable: true
   # 音乐ID：歌单ID / 专辑ID / 歌手ID
   # Music ID: playlist ID / album ID / singer ID
-  id: 1994908354
+  id: 8407304077
   # 播放列表的服务商。netease：网易云 / tencent：腾讯 / kugou：酷狗 / xiami：小米 / baidu：百度
   # Music service provider. netease: Netease Cloud / tencent: Tencent / kugou: Kugou / xiaomi: Xiaomi / baidu: Baidu
   server: netease
@@ -452,7 +455,7 @@ music:
 # 音乐胶囊
 # capsule music
 capsule:
-  enable: false
+  enable: true
   id: 8407304077 # 歌单id / playlist id
   server: netease # 播放列表的服务商。netease：网易云 / tencent：腾讯 / kugou：酷狗 / xiami：小米 / baidu：百度 : Music service provider. netease: Netease Cloud / tencent: Tencent / kugou: Kugou / xiaomi: Xiaomi / baidu: Baidu
   type: playlist # 播放列表的类型。song：单曲 / playlist：歌单 / album：专辑 / artist：歌手 : Type of playlist. song: Single / playlist: Playlist / album: Album / artist: Singer
@@ -565,37 +568,37 @@ footer:
   # Bottom row of icons
   information:
     left: # 左侧显示图标 / Left display icon
-         Github:
-           icon: scoicon sco-github-line
-           url: https://github.com/wleelw
-         Mail:
-           icon: scoicon sco-mail-line
-           url: mailto:wleelw@wzsco.top
+      Github:
+        icon: scoicon sco-github-line
+        url: https://github.com/wleelw
+      Mail:
+        icon: scoicon sco-mail-line
+        url: mailto:wleelw@wzsco.top
     right: # 右侧显示图标 / Right display icon
-         Bilibili:
-           icon: scoicon sco-bilibili-line
-           url: https://space.bilibili.com/1329819902
-         抖音:
-           icon: scoicon sco-douyin-fill
-           url: https://v.douyin.com/iJsLc8jt/
+      Bilibili:
+        icon: scoicon sco-bilibili-line
+        url: https://space.bilibili.com/1329819902
+      抖音:
+        icon: scoicon sco-douyin-fill
+        url: https://v.douyin.com/iJsLc8jt/
 
   # 底部导航栏
   # Bottom navigation bar
   group: # 从左至右 / From left to right
-     导航:
-       归档: /archives/
-       分类: /categories/
-       标签: /tags/
-     服务:
-       阿里云: https://aliyun.com/
-       51la统计: https://v6.51.la/
-       百度统计: https://tongji.baidu.com/
-     支持:
-       打赏记录: /about/
-     协议:
-       Cookies: /cookies/
-       用户协议: /privacy/
-       版权协议: /copyright/
+    导航:
+      归档: /archives/
+      分类: /categories/
+      标签: /tags/
+    服务:
+      阿里云: https://aliyun.com/
+      51la统计: https://v6.51.la/
+      百度统计: https://tongji.baidu.com/
+    支持:
+      打赏记录: /about/
+    协议:
+      Cookies: /cookies/
+      用户协议: /privacy/
+      版权协议: /copyright/
 
   # 底部随机友链
   # Random links at the bottom
@@ -603,7 +606,7 @@ footer:
   # tip: The links here are displayed randomly, not fixed
   # warning: 打开前必须先配置links
   # warning: links must be configured before opening
-  randomlink: false
+  randomlink: true
   # 隐私助手右侧弹窗，填写路径后开启
   # Privacy assistant right pop-up window, fill in the path to open
   privacy: /privacy/
@@ -663,7 +666,7 @@ lightbox: true
 # https://ogp.me/
 # https://developers.facebook.com/docs/sharing/webmasters/
 opengraph:
-  enable: false
+  enable: true
   options:
 #    twitter_card:
 #    twitter_image:
@@ -703,8 +706,8 @@ search:
   # algolia, local
   type: local
   algolia:
-    # hits:
-    #   per_page: 6
+  # hits:
+  #   per_page: 6
   local:
     preload: true
     CDN:
@@ -717,20 +720,20 @@ rightside:
 # 文章摘要AI
 # post abstract AI
 post_ai:
-  enable: false
+  enable: true
   # 右侧显示的模型名称
   # Model name displayed on the right
-  modelName: GPT 4
+  modelName: 'Solitude GPT'
   # key
   # 具体获取方法见文档
   # Specific acquisition method, see the document
-  key:
+  key: 'Qi7QIXLOrxLCyKBW0bie'
   # 自介
   # talk
   talk: 我是王卓Sco开发的摘要生成助理ScoGPT，ScoGPT在静态部署时进行摘要的撰写，并且在访客访问时通过ScoCorrection转译后的文本摘要实现工具。我在这里只负责已经生成的摘要显示，你无法与我直接沟通，但我可以回答一些预设的问题。
   # 随机文章按钮
   # Random post button
-  randomPost: false
+  randomPost: true
   # 举报链接，不填不显示
   # Report link, do not fill in and do not display
   report: https://blog.wzsco.top/about/
@@ -799,6 +802,8 @@ css_prefix: false
 # Insert additional code such as: statistics, advertising, etc.
 extends:
   head: # 在head中插入 / Insert in head
+    - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    - <script>LA.init({id:"3F15j2vtdTo7PPcN",ck:"3F15j2vtdTo7PPcN"})</script>
   #    - <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js"></script>
   body: # 在body中插入 / Insert in body
 

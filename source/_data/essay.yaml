@@ -1,0 +1,18 @@
+essay_list:
+  - content: 主题终于完美适配waline了！并且支持热评功能！
+    date: 2023-12-10 14:06
+    link: https://wzsco.top/
+  - content: 第一集主题安装视频完成录制了！
+    date: 2023-12-05 10:00
+    video:
+      bilibili: BV1z64y1j7gs
+  - content: 来一首慢音乐。
+    date: 2023-11-10 14:06
+    aplayer:
+      server: netease
+      id: 1301572067
+    link: https://wzsco.top/
+  - content: 武功山金顶！
+    date: 2023-10-16 15:32
+    video:
+      bilibili: BV1nj411i7Ja
