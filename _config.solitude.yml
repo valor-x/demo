@@ -699,7 +699,7 @@ busuanzi: true
 # warning：开启前需要安装搜索插件
 # warning: You need to install the search plugin before turning it on
 search:
-  enable: true
+  enable: false
   # algolia, local
   type: local
   algolia:
