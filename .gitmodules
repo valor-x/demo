@@ -1,0 +1,3 @@
+[submodule "themes/solitude"]
+	path = themes/solitude
+	url = git@github.com:wleelw/hexo-theme-solitude.git
