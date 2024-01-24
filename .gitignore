@@ -3,4 +3,5 @@ node_modules/
 public/
 .deploy*/
 .idea/
-db.jsonpublic/
+db.json
+public/
