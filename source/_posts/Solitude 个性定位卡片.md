@@ -380,7 +380,7 @@ date: 2024-01-14 00:00:00
                 .then(data => {
                     if (data.code === "Success") {
                         ipStore = data;
-                        saveToLocal.set('location', ipStore, 3600 * 24);
+                        saveToLocal.set('location', ipStore, 1);
                         showWelcome();
                     }
                 })
