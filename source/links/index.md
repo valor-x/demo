@@ -20,4 +20,11 @@ fork [本仓库](https://github.com/wleelw/solitude.wzsco.top)，修改 `source/
   color:  【vip、speed】
   avatar: 【博客头像】
   topimg: 【博客预览图】
+- name: btwoa
+  link: https://blog.btwoa.com
+  tag: 摆子
+  descr: 世界为你简单
+  color: speed
+  avatar: https://ovo.btwoa.com/btwoa.jpg
+  topimg: https://ovo.btwoa.com/screenshot.jpg
 ```
