@@ -41,6 +41,13 @@ links:
         descr: 胶片和文字都能记录生活.
         color: vip
         avatar: https://bu.dusays.com/2024/01/24/65b10b969810a.png
+      - name: btwoa
+        link: https://blog.btwoa.com
+        tag: 摆子
+        descr: 世界为你简单
+        color: speed
+        avatar: https://ovo.btwoa.com/btwoa.jpg
+        topimg: https://ovo.btwoa.com/screenshot.jpg
   - class_name: 生活
     descr: 生活博客
     type: item
