@@ -1,4 +1,0 @@
-[submodule "themes/solitude"]
-	path = themes/solitude
-	url = https://github.com/wleelw/hexo-theme-solitude
-	branch = dev
