@@ -789,7 +789,7 @@ comment:
   # twikoo 配置信息
   # twikoo settings
   twikoo: # https://twikoo.js.org/
-    envId: https://twikoo.wzsco.top/.netlify/functions/twikoo/ # url: https://twikoo.sondy.top/
+    envId: https://twikoo.wzsco.top/ # url: https://twikoo.sondy.top/
     lang: 'zh-CN' # 语言
     accessToken:  # accessToken
   # waline 配置信息
