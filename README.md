@@ -3,9 +3,9 @@
 
 欢迎 PR 完善文件
 
-提交网站到 示例
+提交网站到 '/source/_data/links.yaml'
 确保你使用 Solitude 主題
-点击这个链接
+
 按要求新增内容(请添加在末尾)
 ```yaml
 - name:   【博客名称】
