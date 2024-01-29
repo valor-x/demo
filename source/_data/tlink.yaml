@@ -3,6 +3,75 @@ links:
     descr: 我会的技能点
     link_list:
       - name: Docker
-        avatar: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/docker.png
+        avatar: https://bu.dusays.com/2024/01/29/65b77d59c9e22.png
         descr: Docker 是一个开源的应用容器引擎，基于 Go 语言 并遵从 Apache2.0 协议开源。
-        link: /
+        link: https://docker.io
+      - name: Git
+        avatar: https://bu.dusays.com/2024/01/29/65b77dda66f97.png
+        descr: Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。
+        link: https://git-scm.com
+      - name: Microsoft Azure
+        avatar: https://bu.dusays.com/2024/01/29/65b782fb8a80b.png
+        descr: Microsoft Azure 是一个灵活的企业级云平台，用于构建、测试、部署和管理应用程序和服务。
+        link: https://azure.microsoft.com
+      - name: .NET
+        avatar: https://bu.dusays.com/2024/01/29/65b783d762273.png
+        descr: .NET 是一个面向对象的编程平台，用于构建基于 Windows 的应用程序。
+        link: https://dotnet.microsoft.com
+      - name: Android
+        avatar: https://bu.dusays.com/2024/01/29/65b77e6c19e68.png
+        descr: Android 开发者
+        link: https://developer.android.com/jetpack/compose
+      - name: Flutter
+        avatar: https://bu.dusays.com/2024/01/29/65b77ef7f3d74.png
+        descr: Flutter 开发者
+        link: https://flutter.dev
+      - name: Redis
+        avatar: https://bu.dusays.com/2024/01/29/65b77f52564d6.png
+        descr: Redis 是一个开源的使用 ANSI C 语言编写、遵守 BSD 协议、支持网络、可基于内存亦可持久化的日志型、Key-Value 数据库，并提供多种语言的 API。
+        link: https://redis.io
+  - class_name: 语言
+    descr: 我会的语言
+    link_list:
+      - name: C#
+        avatar: https://bu.dusays.com/2024/01/29/65b77fd99fd4c.png
+        descr: C# 是一种面向对象、静态类型、强类型的高级编程语言，它既可以用来开发桌面应用程序，也可以用来开发 Web 应用程序，尤其适合用来构建 Windows 平台相关的应用程序。
+        link: https://docs.microsoft.com/zh-cn/dotnet/csharp/
+      - name: F#
+        avatar: https://bu.dusays.com/2024/01/29/65b78017cfe83.png
+        descr: F# 是一种面向对象、静态类型、强类型的高级编程语言，它既可以用来开发桌面应用程序，也可以用来开发 Web 应用程序，尤其适合用来构建 Windows 平台相关的应用程序。
+        link: https://docs.microsoft.com/zh-cn/dotnet/fsharp/
+      - name: Kotlin
+        avatar: https://bu.dusays.com/2024/01/29/65b78041ba95b.png
+        descr: Kotlin 是一种在 Java 虚拟机上运行的静态类型编程语言，被称之为 Android 世界的 Swift。
+        link: https://kotlinlang.org
+      - name: Dart
+        avatar: https://bu.dusays.com/2024/01/29/65b78094e9188.png
+        descr: Dart 适用于 Web、移动、服务器和桌面应用程序的客户端优先、开源的编程语言。
+        link: https://dart.dev
+      - name: Go
+        avatar: https://bu.dusays.com/2024/01/29/65b782343cc56.png
+        descr: Go 速度快、并发性好、内存占用低，是一种静态类型、编译型、并发型，并具有垃圾回收功能的编程语言。
+  - class_name: 工具
+    descr: 我会的开发工具
+    link_list:
+      - name: Visual Studio
+        avatar: https://bu.dusays.com/2024/01/29/65b7857180439.png
+        descr: Visual Studio 是一种面向对象、静态类型、强类型的高级IDE，它既可以用来开发桌面应用程序，也可以用来开发 Web 应用程序，尤其适合用来构建 Windows 平台相关的应用程序。
+        link: https://visualstudio.microsoft.com
+      - name: Android Studio
+        avatar: https://bu.dusays.com/2024/01/29/65b7817bbc3c1.png
+        descr: Android Studio 适合开发原生 Android 应用程序。
+        link: https://developer.android.com/studio
+      - name: VS Code
+        avatar: https://bu.dusays.com/2024/01/29/65b781a774467.png
+        descr: VS Code 是一款轻量级的代码编辑器，适合开发 Web 应用程序。
+        link: https://code.visualstudio.com
+      - name: Goland
+        avatar: https://bu.dusays.com/2024/01/29/65b7851411120.png
+        descr: Goland 是一款轻量级的代码编辑器，适合开发 Web 应用程序。
+        link: https://www.jetbrains.com/go/
+      - name: WebStorm
+        avatar: https://bu.dusays.com/2024/01/29/65b78547b8c98.png
+        descr: WebStorm 是一款轻量级的代码编辑器，适合开发 Web 应用程序。
+        link: https://www.jetbrains.com/webstorm/

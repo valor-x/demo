@@ -5,6 +5,7 @@ date: 2023-11-6 15:37
 recommend: true
 categories:
   - [ 我的项目,Solitude ]
+  - [ 热门 ]
 tags:
   - [ Solitude ]
   - [ 精选 ]

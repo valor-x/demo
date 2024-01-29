@@ -111,22 +111,21 @@ nav:
     我的:
       url: false
       child:
-#        装备:
-#          url: /equipment/
-#          icon: sco-laptop-line
-#        工具箱:
-#          url: /tlink/
-#          icon: sco-tools-fill
+        装备:
+          url: /equipment/
+          icon: sco-laptop-line
+        工具箱:
+          url: /tlink/
+          icon: sco-tools-fill
         音乐馆:
           url: /music/
           icon: sco-disc-fill
-#    关于:
-#      url: false
-#      child:
-#        关于本站:
-#          url: /about/
-#          icon: sco-contacts-fill
-
+    关于:
+      url: false
+      child:
+        关于本站:
+          url: /about/
+          icon: sco-contacts-fill
 
   # 导航栏右侧按钮
   # Button on the right side of the navigation bar
@@ -234,7 +233,7 @@ hometop:
     url: https://docs.wzsco.top/
     # 显示背景图片
     # Display background image
-    img: https://bu.dusays.com/2024/01/24/65b11140b3a72.png
+    img: https://bu.dusays.com/2024/01/29/65b78f706b7da.png
     # 阴影颜色
     # Shadow color
     color: '#006a73'
@@ -530,8 +529,8 @@ post:
   # Article theme color acquisition
   covercolor:
     enable: true
-    mode: local # local：本地取色 / api：img2color取色（无存缓） / api_redis：img2color取色（有存缓） : local: local color / api: img2color color (no storage cache) / api_redis: img2color color (with storage cache)
-    api: https://img2color.meuicat.com/api?img= # api地址 / api address
+    mode: api # local：本地取色 / api：img2color取色（无存缓） / api_redis：img2color取色（有存缓） : local: local color / api: img2color color (no storage cache) / api_redis: img2color color (with storage cache)
+    api: https://img2color.wzsco.top/api?img= # api地址 / api address
     time: 43200000 # api取色间隔（毫秒），默认为12小时 / api color interval (milliseconds), default is 12 hours
 
 # -------------------------
@@ -649,14 +648,14 @@ hightlight:
   # 代码块行高限制
   # Code block line height limit
   hightlimit: 200
-  copy: false # 是否开启复制按钮 / Whether to enable the copy button
-  expand: false # 是否默认展开 / Whether to expand by default
+  copy: true # 是否开启复制按钮 / Whether to enable the copy button
+  expand: true # 是否默认展开 / Whether to expand by default
   # 代码块样式
   # Code block style
   theme: mac # default: 默认 / mac : apple terminal
   # 代码配色
   # Code color
-  color: default # default: 默认  / vscode / solarized-dark / solarized-light / dracula / monokai
+  color: vscode # default: 默认  / vscode / solarized-dark / solarized-light / dracula / monokai
 
 # 图片灯箱
 # image lightbox
@@ -751,10 +750,10 @@ katex:
 # 评论
 # comment
 comment:
-  enable: false
-  type: # waline, twikoo
-  commentBarrage: false # 热评开关 / Hot comment switch
-  newComment: false # 最新评论开关 / Latest comment switch
+  enable: true
+  type: twikoo # waline, twikoo
+  commentBarrage: true # 热评开关 / Hot comment switch
+  newComment: true # 最新评论开关 / Latest comment switch
   # 匿名评论前部分随机信息 / Anonymous comment front random information
   randomInfoStart:
     - '聪敏的'
@@ -768,7 +767,7 @@ comment:
   # twikoo 配置信息
   # twikoo settings
   twikoo: # https://twikoo.js.org/
-    envId: # url: https://twikoo.sondy.top/
+    envId: https://twikoo.wzsco.top/.netlify/functions/twikoo/ # url: https://twikoo.sondy.top/
     lang: 'zh-CN' # 语言
     accessToken:  # accessToken
   # waline 配置信息

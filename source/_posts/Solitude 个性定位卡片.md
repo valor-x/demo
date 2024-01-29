@@ -4,6 +4,7 @@ recommend: true
 tags:
   - [ Solitude ]
   - [ 精选 ]
+  - [ 教程 ]
 categories:
   - [ 我的项目,Solitude ]
 cover: https://bu.dusays.com/2024/01/24/65b1121634de2.png
