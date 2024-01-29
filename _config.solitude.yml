@@ -293,6 +293,28 @@ aside:
     content2: 相信你可以在这里找到对你有用的知识和教程。
     # 个人信息卡片底部的小图标，按照例子填写
     # Small icons at the bottom of the personal information card, fill in according to the example
+    # 个人信息卡片顶部按钮的打招呼语句
+    # Greeting statement of the button at the top of the personal information card
+    sayhello:
+      morning: 一日之计在于晨
+      noon: 吃饱了才有力气干活
+      afternoon: 集中精力，攻克难关
+      night: 不要太劳累了，早睡更健康
+      goodnight: 睡个好觉，保证精力充沛
+    # 个人信息卡片顶部按钮的切换文字
+    # Switching text of the button at the top of the personal information card
+    sayhello2:
+      - 🤖️ 数码科技爱好者
+      - 🔍 分享与热心帮助
+      - 🏠 智能家居小能手
+      - 🔨 设计开发一条龙
+      - 🤝 专修交互与设计
+      - 🏃 脚踏实地行动派
+      - 🧱 团队小组发动机
+      - 💢 壮汉人狠话不多
+      - 🎮 电竞游戏爱好者
+    # 个人信息卡片底部的小图标，按照例子填写
+    # Small icons at the bottom of the personal information card, fill in according to the example
     information:
       # 悬停显示文字
       Github:
@@ -416,16 +438,16 @@ says:
   home_mini: true
   # 1：张洪heo样式 / 2：Leonus样式
   # 1: Zhang Hong heo style / 2: Leonus style
-  style: 1
-  # 即刻短文数量（条）。建议范围：1 ~ 999，当数量为-1时，将显示全部。
-  # Number of immediate short articles (pieces). Suggested range: 1~999, when the quantity is -1, all will be displayed.
+  style: 2
+  # 即刻短文仅展示前n条
+  # Jike short text only shows the first n
   strip: 30
   # 模式选择。local：本地静态 / json：动态json / memos：动态Memos
   # Mode selection. Local: local static/JSON: dynamic JSON/memory: dynamic Memos
-  mode: local
+  mode: memos
   # 动态模式地址。如为json或memos模式，此项为必填。链接获取以及格式可查看主题文档。
   # Dynamic mode address. If it is in JSON or Memos mode, this field is mandatory. The link acquisition and format can be viewed in the theme document.
-  mode_link: # https://example.com/api/v1/memo?creatorId=1&tag=says
+  mode_link: https://memos.wzsco.top/api/v1/memo?creatorId=1&tag=says # https://example.com/api/v1/memo?creatorId=1&tag=says
 
 # -------------------------
 # meeting-api，用于界面中的音乐胶囊和音乐馆页，可自定义api，不会请勿动。
