@@ -551,7 +551,7 @@ post:
   # Article theme color acquisition
   covercolor:
     enable: true
-    mode: api # local：本地取色 / api：img2color取色（无存缓） / api_redis：img2color取色（有存缓） : local: local color / api: img2color color (no storage cache) / api_redis: img2color color (with storage cache)
+    mode: local # local：本地取色 / api：img2color取色（无存缓） / api_redis：img2color取色（有存缓） : local: local color / api: img2color color (no storage cache) / api_redis: img2color color (with storage cache)
     api: https://img2color.wzsco.top/api?img= # api地址 / api address
     time: 43200000 # api取色间隔（毫秒），默认为12小时 / api color interval (milliseconds), default is 12 hours
 
@@ -772,10 +772,10 @@ katex:
 # 评论
 # comment
 comment:
-  enable: true
+  enable: false
   type: twikoo # waline, twikoo
-  commentBarrage: true # 热评开关 / Hot comment switch
-  newComment: true # 最新评论开关 / Latest comment switch
+  commentBarrage: false # 热评开关 / Hot comment switch
+  newComment: false # 最新评论开关 / Latest comment switch
   # 匿名评论前部分随机信息 / Anonymous comment front random information
   randomInfoStart:
     - '聪敏的'
@@ -846,7 +846,7 @@ CDN:
   # The CDN provider of internal scripts (主题内 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # Dev version can only choose. ( dev版本只能为 local )
-  internal: local
+  internal: custom
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   third_party: custom
@@ -859,9 +859,8 @@ CDN:
   custom_format: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
 
   option:
-    scoicon_css: https://cdn.cbd.int/solitude-source@1.0.3/icon/scoicon.min.css
-    waterfall: https://cdn.cbd.int/solitude-source@1.0.3/js/waterfall.min.js
-    view_image: https://cdn.cbd.int/solitude-source@1.0.3/js/view-image.min.js
+    scoicon_css: https://cdn.cbd.int/solitude-source/icon/scoicon.min.css
+    waterfall: https://cdn.cbd.int/solitude-source/js/waterfall.min.js
   # algolia_search:
   # instantsearch:
   # pjax:
