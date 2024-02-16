@@ -1,0 +1,87 @@
+home:
+  noSticky:
+    - class_name: card-docs
+      id_name:
+      name: 文档目录
+      icon: scoicon sco-lightbulb-fill
+      html: '<ul class="card-category-list">
+      <li class="card-category-list-item">
+        <a class="card-category-list-link" href="/posts/a0e4c699.html">
+        🚀 快速开始
+        </a>
+      </li>
+      <li class="card-category-list-item">
+        <a class="card-category-list-link" href="/posts/2db7d40c.html">
+        📑 页面配置
+        </a>
+      </li>
+      <li class="card-category-list-item">
+        <a class="card-category-list-link" href="/posts/54a18de0.html">
+        📌 基本配置
+        </a>
+      </li>
+      <li class="card-category-list-item">
+        <a class="card-category-list-link" href="/posts/29d77ad0.html">
+        ⚔️ 额外配置
+        </a>
+      </li>
+      </ul>'
+  Sticky:
+page:
+  noSticky:
+    - class_name: card-docs
+      id_name:
+      name: 文档目录
+      icon: scoicon sco-lightbulb-fill
+      html: '<ul class="card-category-list">
+      <li class="card-category-list-item">
+        <a class="card-category-list-link" href="/posts/a0e4c699.html">
+        🚀 快速开始
+        </a>
+      </li>
+      <li class="card-category-list-item">
+        <a class="card-category-list-link" href="/posts/2db7d40c.html">
+        📑 主题页面
+        </a>
+      </li>
+      <li class="card-category-list-item">
+        <a class="card-category-list-link" href="/posts/54a18de0.html">
+        📌 基本配置
+        </a>
+      </li>
+      <li class="card-category-list-item">
+        <a class="card-category-list-link" href="/posts/29d77ad0.html">
+        ⚔️ 额外配置
+        </a>
+      </li>
+      </ul>'
+  Sticky:
+post:
+  noSticky:
+    - class_name: card-docs
+      id_name:
+      name: 文档目录
+      icon: scoicon sco-lightbulb-fill
+      html: '<ul class="card-category-list">
+      <li class="card-category-list-item">
+        <a class="card-category-list-link" href="/posts/a0e4c699.html">
+        🚀 快速开始
+        </a>
+      </li>
+      <li class="card-category-list-item">
+        <a class="card-category-list-link" href="/posts/2db7d40c.html">
+        📑 主题页面
+        </a>
+      </li>
+      <li class="card-category-list-item">
+        <a class="card-category-list-link" href="/posts/54a18de0.html">
+        📌 基本配置
+        </a>
+      </li>
+      <li class="card-category-list-item">
+        <a class="card-category-list-link" href="/posts/29d77ad0.html">
+        ⚔️ 额外配置
+        </a>
+      </li>
+      </ul>'
+  Sticky:

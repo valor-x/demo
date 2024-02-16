@@ -1,3 +1,4 @@
+---
 #---------------------------
 # Hexo Theme Solitude
 # Author: wleelw（王卓Sco）、yife68（亦封）
@@ -28,16 +29,10 @@ site:
     custom: Solitude
   # 网页icon
   # Web icon
-  siteIcon: https://bu.dusays.com/2023/11/08/654af68b25bb8.jpg
+  siteIcon: /img/favicon.png
   # 页脚的Logo、加载动画默认的logo
   # Logo in the footer, default logo for loading animation
   icon: https://bu.dusays.com/2023/11/08/654af68b25bb8.jpg
-  # ICP 例如：湘ICP备2023015327号
-  # ICP, for example: 湘ICP备2023015327号
-  icp:
-  # ICP链接 例如：http://www.beian.miit.gov.cn/
-  # ICP link, for example: http://www.beian.miit.gov.cn/
-  icp_url:
 
 # 导航栏
 # navigation bar
@@ -51,22 +46,25 @@ nav:
     # 导航栏显示的内容
     # Content displayed in the navigation bar
     menu:
-      #      # 显示分类名
-      #      # Display category name
+      # 显示分类名
+      # Display category name
       项目:
-        # 显示子类
-        # Display subcategories
+        # # 显示子类
+        # # Display subcategories
         Solitude:
           # 显示的图标
           # Displayed icon
           icon: https://bu.dusays.com/2023/11/08/654af68b25bb8.jpg
           # 点击的跳转链接
           # Click the jump link
-          url: https://github.com/wleelw/Hexo-Theme-solitude
+          url: https://github.com/wleelw/hexo-theme-solitude
       我的:
-        个人主页:
-          icon: https://bu.dusays.com/2024/01/24/65b10e5e2e8ee.png
+        主页:
+          icon: https://bu.dusays.com/2023/12/19/658179febbfb5.png
           url: https://wzsco.top/
+        博客:
+          icon: https://bu.dusays.com/2023/12/19/658179febbfb5.png
+          url: https://blog.wzsco.cn/
 
   # 导航栏内容
   # Navigation bar content
@@ -99,48 +97,27 @@ nav:
         全部标签:
           url: /tags/
           icon: sco-price-tag-fill
-    友链:
-      url: false
-      child:
-        友情链接:
-          url: /links/
-          icon: sco-group-fill
-        宝藏博主:
-          url: javascript:travelling()
-          icon: sco-gift-fill
-    我的:
-      url: false
-      child:
-        装备:
-          url: /equipment/
-          icon: sco-laptop-line
-        工具箱:
-          url: /tlink/
-          icon: sco-tools-fill
-        音乐馆:
-          url: /music/
-          icon: sco-disc-fill
-    关于:
-      url: false
-      child:
-        关于本站:
-          url: /about/
-          icon: sco-contacts-fill
+    安装文档:
+      url: /categories/Docs/
+    作者博客:
+      url: https://blog.wzsco.cn
+    示例:
+      url: /links/
 
   # 导航栏右侧按钮
   # Button on the right side of the navigation bar
   # tip：只需填写true和false即可
   # tip: Just fill in true and false
   right:
-    random: true        # 随机文章跳转 true：开启 / false：关闭 : random post jump true: on / false: off
-    console: true       #控制台 true：开启 / false：关闭 : console true: on / false: off
+    random: true # 随机文章跳转 true：开启 / false：关闭 : random post jump true: on / false: off
+    console: true #控制台 true：开启 / false：关闭 : console true: on / false: off
     # 从左至右
     # From left to right
     custom:
       - name: 开往 - 友链接力 # 显示文字 / Displayed text
         url: https://www.travellings.cn/go.html # 跳转链接 / Jump link
         icon: sco-train-line # 图标 / Icon
-        onclick:  # 点击事件 / Click event
+        onclick: # 点击事件 / Click event
         id: travellings_button # id
 
 # 首页顶部样式
@@ -159,37 +136,37 @@ hometop:
     title: 宁静致远<br>热爱生活
     # 左上角显示小文字
     # Small text displayed in the upper left corner
-    url: Hexo Theme Solitude
+    url: Hexo-Theme-Solitude
     # 轮播icon
     # Carousel icon
     icon:
-      # 名字 / Name
+      # # 名字 / Name
       HTML:
         # 图片 / Image
         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/HTML.png
         # 背景色 / Background color
-        color: '#e9572b'
+        color: "#e9572b"
       JS:
         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/JS.png
-        color: '#f7cb4f'
+        color: "#f7cb4f"
       Kotlin:
         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/kotlin-logo.svg
-        color: '#ffffff'
+        color: "#ffffff"
       Docker:
         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/docker.png
-        color: '#57b6e6'
+        color: "#57b6e6"
       Flutter:
         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/flutter.png
-        color: '#ffffff'
+        color: "#ffffff"
       WebPack:
         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/webpack.png
-        color: '#2e3a41'
+        color: "#2e3a41"
       Git:
         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/git.png
-        color: '#df5b40'
+        color: "#df5b40"
       VS:
         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/vs-logo.svg
-        color: '#ffffff'
+        color: "#ffffff"
 
   # 顶部三大分类
   # Top three categories
@@ -215,9 +192,9 @@ hometop:
     # 右侧
     # Right
     G3:
-      name: 实用教程
+      name: 安装教程
       icon: scoicon sco-book-mark-fill
-      url: /tags/教程/
+      url: /tags/Docs/
 
   # 右侧置顶列表（在文章的front matter中添加“recommend: true”）
   # Right top list (add "recommend: true" in the front matter of the article)
@@ -227,16 +204,16 @@ hometop:
     sup: 置顶
     # 左下角大字
     # Large text in the lower left corner
-    title: Solitude主题文档
+    title: 快速开始
     # 点击跳转链接
     # Click the jump link
-    url: https://docs.wzsco.top/
+    url: /posts/a0e4c699.html
     # 显示背景图片
     # Display background image
-    img: https://bu.dusays.com/2024/01/29/65b78f706b7da.png
+    img: https://bu.dusays.com/2024/02/16/65cf175219f61.png
     # 阴影颜色
     # Shadow color
-    color: '#006a73'
+    color: "#3D88D2"
 
 # --------------------------------------
 # Aside Settings
@@ -255,7 +232,7 @@ aside:
     noSticky: "about"
     # 不固定的信息（滑动跟随）
     # Unfixed information (sliding follow)
-    Sticky: "flip,allInfo"
+    Sticky: "allInfo"
   # 在文章页显示的侧边栏信息
   # Sidebar information displayed on the article page
   post:
@@ -266,7 +243,6 @@ aside:
   page:
     noSticky: "about"
     Sticky: "newestPost,allInfo"
-
   # 侧边栏个人信息卡片
   # Sidebar personal information
   card:
@@ -275,12 +251,15 @@ aside:
     author:
       # 头像
       # Avatar
-      img: https://bu.dusays.com/2023/12/03/656c3bdb92c9c.png
+      img: https://bu.dusays.com/2023/11/08/654af68b25bb8.jpg
       # 表情图片链接
       # Emoticon image link
       # tip: 推荐尺寸 26x26
       # tip: Recommended size 26x26
       sticker: https://bu.dusays.com/2023/12/30/659011053e246.png
+    # 点击作者名称跳转链接
+    # Click the author name to jump link
+    url: https://blog.wzsco.cn/
     # 文案1
     # label1
     # tip：可使用html标签
@@ -313,17 +292,15 @@ aside:
       - 🧱 团队小组发动机
       - 💢 壮汉人狠话不多
       - 🎮 电竞游戏爱好者
-    # 个人信息卡片底部的小图标，按照例子填写
-    # Small icons at the bottom of the personal information card, fill in according to the example
     information:
-      # 悬停显示文字
+      # # 悬停显示文字
       Github:
         # 图标
         icon: scoicon sco-github-line
         # 跳转链接
-        url: https://github.com/DuoSco/Hexo-Theme-slitude
+        url: https://github.com/wleelw/hexo-theme-slitude
       Bilibili:
-        icon: scoicon sco-bilibili-line
+        icon: scoicon sco-qq-line
         url: https://space.bilibili.com/1329819902
 
   # 二维码
@@ -331,16 +308,16 @@ aside:
   flip:
     # 右下角头像
     # Avatar in the lower right corner
-    favicon: https://bu.dusays.com/2024/01/24/65b110134df35.png
+    favicon:
     # 正面
     # Front
-    face: https://bu.dusays.com/2024/01/24/65b110258f6db.png
+    face:
     # 鼠标悬停翻转图片
     # Mouse hover flip image
-    backface: https://bu.dusays.com/2024/01/24/65b1103952e55.png
+    backface:
     # 夜间模式下是否开启卡片背景颜色 true：使用背景颜色 / false：不使用背景颜色
     # Whether to enable card background color in night mode true: use background color / false: do not use background color
-    darkcolor: true
+    darkcolor: false
 
   # 页面目录
   # Page directory
@@ -353,31 +330,31 @@ aside:
     page: false
     # 开启后不悬停目录有模糊效果
     # After opening, there is a fuzzy effect without hovering over the directory
-    vague: false
+    vague: true
 
   # 侧边栏文章列表
   # Sidebar article list
   tags:
     # 是否显示标签
     # Whether to display tags
-    enable: false
+    enable: true
     # 显示标签数量，当高于标签总数时，显示全部标签按钮
     # Display the number of tags, when it is higher than the total number of tags, display all tags button
     limit: 20
     # 高亮显示
     # Highlight
-    highlight: false
+    highlight: true
     # 高亮显示标签列表
     # Highlighted tag list
     list:
-      - 'Solitude-使用'
+      - "Docs"
 
   # 侧边栏归档
   # aside archive
   archive:
-    enable: false
+    enable: true
     # 显示类型
-    type: 'month' # month: 按月 / year: 按年 : monthly: by month / yearly: by year
+    type: "month" # monthly: 按月 / yearly: 按年 : monthly: by month / yearly: by year
 
   # 建站信息
   # Website information
@@ -402,84 +379,7 @@ aside:
     runtimeenable: true
     # 格式：yyyy-MM-dd hh-mm-ss
     # Format: yyyy-MM-dd hh-mm-ss
-    runtime: '2023-04-20 00:00:00'
-
-# -------------------------
-# 页面配置
-# page settings
-
-# 404 页面
-# 404 page
-errorpage:
-  # 图片
-  # image
-  img: https://npm.elemecdn.com/wzheo-absolute@1.0.3/image/source/404.png
-  # 文字
-  # text
-  text: =awa= 页面走丢了
-  # 推荐文章列表
-  # Recommended article list
-  recommendList: true
-
-# 关于页
-# about page
-about: false
-
-# 即刻说说页
-# jike says page
-# 前置要求：需配置即刻说说页面
-# Pre-requirements: Jike says page needs to be configured
-# 开启后将显示即刻页面
-# After opening, the Jike page will be displayed
-says:
-  enable: true
-  # 主页的即刻轮播条
-  # Jike carousel bar on the homepage
-  home_mini: true
-  # 1：张洪heo样式 / 2：Leonus样式
-  # 1: Zhang Hong heo style / 2: Leonus style
-  style: 2
-  # 即刻短文仅展示前n条
-  # Jike short text only shows the first n
-  strip: 30
-  # 模式选择。local：本地静态 / json：动态json / memos：动态Memos
-  # Mode selection. Local: local static/JSON: dynamic JSON/memory: dynamic Memos
-  mode: memos
-  # 动态模式地址。如为json或memos模式，此项为必填。链接获取以及格式可查看主题文档。
-  # Dynamic mode address. If it is in JSON or Memos mode, this field is mandatory. The link acquisition and format can be viewed in the theme document.
-  mode_link: https://memos.wzsco.top/api/v1/memo?creatorId=1&tag=says # https://example.com/api/v1/memo?creatorId=1&tag=says
-
-# -------------------------
-# meeting-api，用于界面中的音乐胶囊和音乐馆页，可自定义api，不会请勿动。
-# meeting-api, used for music capsules and music halls in the interface, can customize api, do not move if you don't know.
-meting_api: "https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r" #自定义api
-# 音乐馆页
-# music hall
-music:
-  enable: true
-  # 音乐ID：歌单ID / 专辑ID / 歌手ID
-  # Music ID: playlist ID / album ID / singer ID
-  id: 8407304077
-  # 播放列表的服务商。netease：网易云 / tencent：腾讯 / kugou：酷狗 / xiami：小米 / baidu：百度
-  # Music service provider. netease: Netease Cloud / tencent: Tencent / kugou: Kugou / xiaomi: Xiaomi / baidu: Baidu
-  server: netease
-  # 播放列表的类型。song：单曲 / playlist：歌单 / album：专辑 / artist：歌手
-  # Type of playlist. song: Single / playlist: Playlist / album: Album / artist: Singer
-  type: playlist
-  # 初始音量。0.8 = 80%，范围 0 到 1
-  # Initial volume. 0.8 = 80%, range 0 to 1
-  volume: 0.8
-  # 是否开启互斥模式，即同时只能有一个播放器播放
-  # Whether to enable mutex mode, that is, only one player can play at the same time
-  mutex: true
-
-# 音乐胶囊
-# capsule music
-capsule:
-  enable: true
-  id: 8407304077 # 歌单id / playlist id
-  server: netease # 播放列表的服务商。netease：网易云 / tencent：腾讯 / kugou：酷狗 / xiami：小米 / baidu：百度 : Music service provider. netease: Netease Cloud / tencent: Tencent / kugou: Kugou / xiaomi: Xiaomi / baidu: Baidu
-  type: playlist # 播放列表的类型。song：单曲 / playlist：歌单 / album：专辑 / artist：歌手 : Type of playlist. song: Single / playlist: Playlist / album: Album / artist: Singer
+    runtime: "2023-04-20 00:00:00"
 
 # -------------------------
 # 文章页、页面配置
@@ -488,7 +388,7 @@ capsule:
 # 页面默认设置
 # page default settings
 page:
-  error: true  # 404页面 / 404 page
+  error: true # 404页面 / 404 page
   tags: true # 标签页 /  Tags page
   categories: true # 分类页 /  Categories page
   default: # 默认值 /  Default value
@@ -543,15 +443,15 @@ post:
     alipay: https://bu.dusays.com/2023/11/07/6549e79d02bd6.png
     # 打赏统计页面链接
     # Reward statistics page link
-    url: /about
+    url: https://blog.wzsco.cn/about
   # 版权中订阅按钮跳转链接，填写地址后开启
   # Subscription button jump link in copyright
-  rss: /atom.xml
+  rss: # /atom.xml
   # 文章主题色获取
   # Article theme color acquisition
   covercolor:
     enable: true
-    mode: local # local：本地取色 / api：img2color取色（无存缓） / api_redis：img2color取色（有存缓） : local: local color / api: img2color color (no storage cache) / api_redis: img2color color (with storage cache)
+    mode: api # local：本地取色 / api：img2color取色 : local: local color / api: img2color color
     api: https://img2color.wzsco.top/api?img= # api地址 / api address
     time: 43200000 # api取色间隔（毫秒），默认为12小时 / api color interval (milliseconds), default is 12 hours
 
@@ -565,13 +465,13 @@ post:
 # --------------------------------------
 theme_color:
   dark: "#ffc848" # 暗色模式 / Dark mode
-  dark_op: '#f2b94b23' # 暗色模式透明 / Dark mode transparent
-  dark_op_deep: '#f2b94bdd' # 暗色模式透明深色 / Dark mode transparent dark
-  dark_none: '#f2b94b00' # 暗色模式透明无色 / Dark mode transparent colorless
+  dark_op: "#f2b94b23" # 暗色模式透明 / Dark mode transparent
+  dark_op_deep: "#f2b94bdd" # 暗色模式透明深色 / Dark mode transparent dark
+  dark_none: "#f2b94b00" # 暗色模式透明无色 / Dark mode transparent colorless
   light: "#425AEF" # 亮色模式 / Light mode
-  light_op: '#4259ef23' # 亮色模式透明 / Light mode transparent
-  light_op_deep: '#4259efdd' # 亮色模式透明深色 / Light mode transparent dark
-  light_none: '#4259ef01' # 亮色模式透明无色 / Light mode transparent colorless
+  light_op: "#4259ef23" # 亮色模式透明 / Light mode transparent
+  light_op_deep: "#4259efdd" # 亮色模式透明深色 / Light mode transparent dark
+  light_none: "#4259ef01" # 亮色模式透明无色 / Light mode transparent colorless
 
 # 主题显示模式调整
 # theme display mode adjustment
@@ -580,6 +480,22 @@ theme_color:
 # --------------------------------------
 display_mode:
   type: auto # auto: 自动切换 / dark: 暗色模式 / light: 亮色模式 / auto: automatic switching / dark: dark mode / light: light mode
+  universe: true # 开启后暗色模式下会显示星空背景 / After opening, the dark mode will display the starry sky background
+
+# 文章底部推荐文章
+# Recommended articles at the bottom of the article
+related_post:
+  enable: true
+  # 推荐文章数量
+  # Number of recommended articles
+  limit: 2
+  # 根据创建日期（created）或是更新日期（updated）
+  # According to the creation date (created) or the update date (updated)
+  date_type: created
+
+# -------------------------
+# 扩展配置
+# extend settings
 
 # --------------------------------------
 # Footer Settings
@@ -588,14 +504,16 @@ footer:
   # 底部上方一排图标
   # Bottom row of icons
   information:
-    left: # 左侧显示图标 / Left display icon
+    # 左侧显示图标 / Left display icon
+    left:
       Github:
-        icon: scoicon sco-github-line
-        url: https://github.com/wleelw
+        icon: scoicon sco-bilibili-line
+        url: https://github.com/wleelw/hexo-theme-solitude
       Mail:
         icon: scoicon sco-mail-line
         url: mailto:wleelw@wzsco.top
-    right: # 右侧显示图标 / Right display icon
+    # 右侧显示图标 / Right display icon
+    right:
       Bilibili:
         icon: scoicon sco-bilibili-line
         url: https://space.bilibili.com/1329819902
@@ -605,21 +523,15 @@ footer:
 
   # 底部导航栏
   # Bottom navigation bar
-  group: # 从左至右 / From left to right
+  group:
     导航:
       归档: /archives/
       分类: /categories/
       标签: /tags/
-    服务:
-      阿里云: https://aliyun.com/
-      51la统计: https://v6.51.la/
-      百度统计: https://tongji.baidu.com/
     支持:
       打赏记录: /about/
-    协议:
-      Cookies: /cookies/
-      用户协议: /privacy/
-      版权协议: /copyright/
+    关于:
+      作者博客: https://blog.wzsco.cn
 
   # 底部随机友链
   # Random links at the bottom
@@ -630,17 +542,140 @@ footer:
   randomlink: true
   # 隐私助手右侧弹窗，填写路径后开启
   # Privacy assistant right pop-up window, fill in the path to open
-  privacy: /privacy/
-  # 订阅链接
-  # Subscription link
-  rss: /rss/
+  privacy: # /privacy/
   # 版权
   # Copyright
-  license: /license/
+  license: # /license/
+  # 页脚右侧链接，例如：ICP备案号、公安备案号等
+  # Footer right link, such as: ICP filing number, public security filing number, etc.
+  links:
+    # 为了主题能够得到更多的支持，建议保留主题链接
+    # In order for the theme to get more support, it is recommended to keep the theme link
+    - name: 主题
+      url: https://github.com/wleelw/hexo-theme-solitude
+#    - name: 订阅
+#      url: /atom.xml
 
 # -------------------------
-# 扩展配置
-# extend settings
+# 扩展页面配置
+# extra page settings
+
+# 404 页面
+# 404 page
+errorpage:
+  # 图片
+  # image
+  img: https://bu.dusays.com/2023/03/03/6401a7906aa4a.gif
+  # 文字
+  # text
+  text: 页面未找到
+  # 推荐文章列表
+  # Recommended article list
+  recommendList: true
+
+# 即刻说说页
+# jike says page
+# 前置要求：需配置即刻说说页面
+# Pre-requirements: Jike says page needs to be configured
+# 开启后将显示即刻页面
+# After opening, the Jike page will be displayed
+says:
+  enable: false
+  # 主页的即刻轮播条
+  # Jike carousel bar on the homepage
+  home_mini: false
+  # 1：张洪heo样式 / 2：Leonus样式
+  # 1: Zhang Hong heo style / 2: Leonus style
+  style: 1
+  # 即刻短文仅展示前n条
+  # Jike short text only shows the first n
+  strip: 30
+
+# -------------------------
+# meeting-api，用于界面中的音乐胶囊和音乐馆页，可自定义api，不会请勿动。
+# meeting-api, used for music capsules and music halls in the interface, can customize api, do not move if you don't know.
+meting_api: "https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r" #自定义api
+# 音乐馆页
+# music hall
+music:
+  enable: false
+  # 音乐ID：歌单ID / 专辑ID / 歌手ID
+  # Music ID: playlist ID / album ID / singer ID
+  id: 1994908354
+  # 播放列表的服务商。netease：网易云 / tencent：腾讯 / kugou：酷狗 / xiami：小米 / baidu：百度
+  # Music service provider. netease: Netease Cloud / tencent: Tencent / kugou: Kugou / xiaomi: Xiaomi / baidu: Baidu
+  server: netease
+  # 播放列表的类型。song：单曲 / playlist：歌单 / album：专辑 / artist：歌手
+  # Type of playlist. song: Single / playlist: Playlist / album: Album / artist: Singer
+  type: playlist
+  # 初始音量。0.8 = 80%，范围 0 到 1
+  # Initial volume. 0.8 = 80%, range 0 to 1
+  volume: 0.8
+  # 是否开启互斥模式，即同时只能有一个播放器播放
+  # Whether to enable mutex mode, that is, only one player can play at the same time
+  mutex: true
+
+# 音乐胶囊
+# capsule music
+capsule:
+  enable: false
+  id: 8407304077 # 歌单id / playlist id
+  server: netease # 播放列表的服务商。netease：网易云 / tencent：腾讯 / kugou：酷狗 / xiami：小米 / baidu：百度 : Music service provider. netease: Netease Cloud / tencent: Tencent / kugou: Kugou / xiaomi: Xiaomi / baidu: Baidu
+  type: playlist # 播放列表的类型。song：单曲 / playlist：歌单 / album：专辑 / artist：歌手 : Type of playlist. song: Single / playlist: Playlist / album: Album / artist: Singer
+
+# 友链鱼塘
+# Links fish pond
+moments:
+  enable: false # 是否开启鱼塘 / Whether to enable fish pond
+  api: # https://blog.wzsco.top/circle/ # api地址 / api address
+  error_img: https://bu.dusays.com/2023/11/08/654af68b25bb8.jpg # 加载失败显示图片 / Loading failed display image
+  sort_rule: created # 排序规则：created：按创建时间排序 / updated：按更新时间排序 : Sort rule: created: Sort by creation time / updated: Sort by update time
+  expire_days: 1 # 缓存过期时间（天），默认为1天 / Cache expiration time (days), default is 1 day
+  page_init_number: 10 # 页面初始化加载数量，默认为10条 / Page initialization loading quantity, default is 10
+  page_turning_number: 5 # 页面翻页加载数量，默认为5条 / Page turning loading quantity, default is 5
+  angle: false # 鱼塘随机文章 / Fish pond random article
+  appjs: https://cdn.cbd.int/solitude-source@1.0.3/js/fcircle.min.js # 鱼塘js / Fish pond js
+  bundlejs: https://cdn.cbd.int/solitude-source/js/moment/bundle.min.js # 鱼塘js / Fish pond js
+  randompostjs: https://cdn.cbd.int/solitude-source/js/moment/random_post.min.js # 鱼塘js / Fish pond js
+
+# 相册
+# album
+album:
+  enable: false # 是否开启相册 / Whether to enable album
+  limit: 6 # 单行显示图片数量 / Number of pictures displayed in a single line
+
+# 快捷菜单你
+# quick menu
+keyboard:
+  enable: true # 是否开启键盘控制 / Whether to enable keyboard control
+  # 键盘控制配置
+  # Keyboard control configuration
+  list:
+    # name: 按键名称
+    # name: Key name
+    # key: 按键
+    # key: Key
+    # func: 方法
+    # func: Function
+    # sco: sco内置方法
+    # sco: sco built-in method
+    # url: 跳转链接
+    # url: Jump link
+    - name: 关闭快捷键功能
+      key: K
+      func: keyboard
+    - name: 打开中控台
+      key: A
+      sco: showConsole
+    - name: 播放/暂停音乐
+      key: M
+      sco: musicToggle
+    - name: 打开友情链接
+      key: L
+      url: "/links/"
+    - name: 前往作者博客
+      key: B
+      url: "https://blog.wzsco.cn"
 
 # 懒加载
 # lazyload
@@ -674,14 +709,32 @@ hightlight:
   expand: true # 是否默认展开 / Whether to expand by default
   # 代码块样式
   # Code block style
-  theme: mac # default: 默认 / mac : apple terminal
+  theme: default # default: 默认 / mac : apple terminal
   # 代码配色
   # Code color
-  color: vscode # default: 默认  / vscode / solarized-dark / solarized-light / dracula / monokai
+  color: monokai # default: 默认  / vscode / solarized-dark / solarized-light / dracula / monokai
 
 # 图片灯箱
 # image lightbox
+# warning：开启前下方的fancybox或mediumZoom必须打开一个
+# warning: One of the fancybox or mediumZoom below must be turned on before turning on
 lightbox: true
+
+# fancybox
+# https://fancyapps.com/fancybox/
+fancybox: true
+
+# mediumZoom
+mediumZoom: false
+
+# 简繁转换
+# Simplified and Traditional Chinese conversion
+translate:
+  enable: false
+  # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
+  defaultEncoding: 2
+  # Time delay
+  translateDelay: 0
 
 # Open Graph
 # https://ogp.me/
@@ -689,24 +742,13 @@ lightbox: true
 opengraph:
   enable: true
   options:
-#    twitter_card:
-#    twitter_image:
-#    twitter_id:
-#    twitter_site:
-#    google_plus:
-#    fb_admins:
-#    fb_app_id:
-
-# 文章底部推荐文章
-# Recommended articles at the bottom of the article
-related_post:
-  enable: true
-  # 推荐文章数量
-  # Number of recommended articles
-  limit: 2
-  # 根据创建日期（created）或是更新日期（updated）
-  # According to the creation date (created) or the update date (updated)
-  date_type: created
+  #  twitter_card:
+  #  twitter_image:
+  #  twitter_id:
+  #  twitter_site:
+  #  google_plus:
+  #  fb_admins:
+  #  fb_app_id:
 
 # 字数统计
 # word count
@@ -726,35 +768,40 @@ search:
   enable: false
   # algolia, local
   type: local
+  # 推荐标签
+  # Recommended tags
+  tags:
+  #  - Solitude
+  #  - Hexo
   algolia:
   # hits:
   #   per_page: 6
   local:
-    preload: true
+    preload: false
     CDN:
 
 # rightside(右键菜单)
 # right menu
 rightside:
-  enable: true
+  enable: false
 
 # 文章摘要AI
 # post abstract AI
 post_ai:
-  enable: true
+  enable: false
   # 右侧显示的模型名称
   # Model name displayed on the right
-  modelName: 'Solitude GPT'
+  modelName: GPT 4
   # key
   # 具体获取方法见文档
   # Specific acquisition method, see the document
-  key: 'Qi7QIXLOrxLCyKBW0bie'
+  key:
   # 自介
   # talk
   talk: 我是王卓Sco开发的摘要生成助理ScoGPT，ScoGPT在静态部署时进行摘要的撰写，并且在访客访问时通过ScoCorrection转译后的文本摘要实现工具。我在这里只负责已经生成的摘要显示，你无法与我直接沟通，但我可以回答一些预设的问题。
   # 随机文章按钮
   # Random post button
-  randomPost: true
+  randomPost: false
   # 举报链接，不填不显示
   # Report link, do not fill in and do not display
   report: https://blog.wzsco.top/about/
@@ -773,29 +820,29 @@ katex:
 # comment
 comment:
   enable: false
-  type: twikoo # waline, twikoo
+  type: # waline, twikoo
   commentBarrage: false # 热评开关 / Hot comment switch
   newComment: false # 最新评论开关 / Latest comment switch
   # 匿名评论前部分随机信息 / Anonymous comment front random information
   randomInfoStart:
-    - '聪敏的'
-    - '可爱的'
-    - '美丽的'
+    - "聪敏的"
+    - "可爱的"
+    - "美丽的"
   # 匿名评论后部分随机信息 / Anonymous comment after random information
   randomInfoEnd:
-    - '白菜'
-    - '小可爱'
-    - '小仙女'
+    - "白菜"
+    - "小可爱"
+    - "小仙女"
   # twikoo 配置信息
   # twikoo settings
   twikoo: # https://twikoo.js.org/
-    envId: https://twikoo.wzsco.top/ # url: https://twikoo.sondy.top/
-    lang: 'zh-CN' # 语言
-    accessToken:  # accessToken
+    envId: # url: https://twikoo.sondy.top/
+    lang: "zh-CN" # 语言
+    accessToken: # accessToken
   # waline 配置信息
   # waline settings
   waline: # https://waline.js.org/
-    envId:  # url: https://waline.wzsco.top
+    envId: # url: https://waline.wzsco.top
     pageview: true # 是否开启页面访问量统计 / Whether to enable page access statistics
     option: # waline配置项 / waline configuration item
 
@@ -823,21 +870,21 @@ css_prefix: false
 # Insert additional code such as: statistics, advertising, etc.
 extends:
   head: # 在head中插入 / Insert in head
-    - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-    - <script>LA.init({id:"3F15j2vtdTo7PPcN",ck:"3F15j2vtdTo7PPcN"})</script>
+    - <link rel="stylesheet" href="/css/custom.css">
   #    - <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js"></script>
   body: # 在body中插入 / Insert in body
 
 # PWA
+# https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps
 pwa:
-  enable: false # 是否开启
+  enable: false
   manifest: /manifest.json # manifest.json 文件路径
-  theme_color: '#ffffff' # 主题颜色
-  mask_icon: https://cdn.cbd.int/solitude-source@1.0.3/img/pwa/180.png # 遮罩图标
-  apple_touch_icon: https://cdn.cbd.int/solitude-source@1.0.3/img/pwa/180.png # 苹果触摸图标
-  bookmark_icon: https://cdn.cbd.int/solitude-source@1.0.3/img/pwa/180.png # 书签图标
-  favicon_32_32: https://cdn.cbd.int/solitude-source@1.0.3/img/pwa/32.png # 32x32图标
-  favicon_16_16: https://cdn.cbd.int/solitude-source@1.0.3/img/pwa/16.png # 16x16图标
+  theme_color: "#ffffff" # 主题颜色
+  mask_icon: https://cdn.cbd.int/solitude-source/img/pwa/180.png # 遮罩图标
+  apple_touch_icon: https://cdn.cbd.int/solitude-source/img/pwa/180.png # 苹果触摸图标
+  bookmark_icon: https://cdn.cbd.int/solitude-source/img/pwa/180.png # 书签图标
+  favicon_32_32: https://cdn.cbd.int/solitude-source/img/pwa/32.png # 32x32图标
+  favicon_16_16: https://cdn.cbd.int/solitude-source/img/pwa/16.png # 16x16图标
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -846,9 +893,9 @@ CDN:
   # The CDN provider of internal scripts (主题内 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # Dev version can only choose. ( dev版本只能为 local )
-  internal: custom
+  internal: local
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
-  # option: local/jsdelivr/unpkg/cdnjs/custom
+  # option: jsdelivr/unpkg/cdnjs/custom
   third_party: custom
 
   # Add version number to url, true or false
@@ -859,26 +906,27 @@ CDN:
   custom_format: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
 
   option:
-    scoicon_css: https://cdn.cbd.int/solitude-source/icon/scoicon.min.css
+    scoicon_css: https://cdn2.codesign.qq.com/icons/7pOrz0WXB5ZWJPX/latest/iconfont.css
     waterfall: https://cdn.cbd.int/solitude-source/js/waterfall.min.js
-  # algolia_search:
-  # instantsearch:
-  # pjax:
-  # twikoo:
-  # waline_js:
-  # waline_css:
-  # sharejs:
-  # sharejs_css:
-  # katex:
-  # katex_copytex:
-  # lazyload:
-  # aplayer_css:
-  # aplayer_js:
-  # meting_js:
-  # pace_js:
-  # lunr_js:
-  # swiper_css:
-  # swiper_js:
-  # busuanzi_js:
-  # snackbar_css:
-  # snackbar_js:
+    universe_js: https://cdn.cbd.int/solitude-source/js/universe.min.js
+  #  algolia_search:
+  #  instantsearch:
+  #  pjax:
+  #  twikoo:
+  #  waline_js:
+  #  waline_css:
+  #  sharejs:
+  #  sharejs_css:
+  #  katex:
+  #  katex_copytex:
+  #  lazyload:
+  #  aplayer_css:
+  #  aplayer_js:
+  #  meting_js:
+  #  pace_js:
+  #  lunr_js:
+  #  swiper_css:
+  #  swiper_js:
+  #  busuanzi_js:
+  #  snackbar_css:
+  #  snackbar_js:
