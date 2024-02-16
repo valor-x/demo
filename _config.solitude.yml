@@ -871,6 +871,8 @@ css_prefix: false
 extends:
   head: # 在head中插入 / Insert in head
     - <link rel="stylesheet" href="/css/custom.css">
+    - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    - <script>LA.init({id:"3F15j2vtdTo7PPcN",ck:"3F15j2vtdTo7PPcN"})</script>
   #    - <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js"></script>
   body: # 在body中插入 / Insert in body
 
