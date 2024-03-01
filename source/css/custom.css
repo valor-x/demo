@@ -15,6 +15,10 @@
     height: 100%;
 }
 
+.card-category-list-item a:hover {
+    color: var(--sco-white);
+}
+
 .card-category-list-item:hover {
     background-color: var(--sco-main);
     padding-left: 20px;

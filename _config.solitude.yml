@@ -38,71 +38,23 @@ site:
 # navigation bar
 nav:
   #导航栏左侧
-  # left
-  left:
-    # 是否开启左侧导航栏
-    # Whether to enable the left navigation bar
-    enable: true
-    # 导航栏显示的内容
-    # Content displayed in the navigation bar
-    menu:
-      # 显示分类名
-      # Display category name
-      项目:
-        # # 显示子类
-        # # Display subcategories
-        Solitude:
-          # 显示的图标
-          # Displayed icon
-          icon: https://bu.dusays.com/2023/11/08/654af68b25bb8.jpg
-          # 点击的跳转链接
-          # Click the jump link
-          url: https://github.com/wleelw/hexo-theme-solitude
-      我的:
-        主页:
-          icon: https://bu.dusays.com/2023/12/19/658179febbfb5.png
-          url: https://wzsco.top/
-        博客:
-          icon: https://bu.dusays.com/2023/12/19/658179febbfb5.png
-          url: https://blog.wzsco.cn/
+  group:
+    # 分类名称: 链接地址 || 图标
+    项目:
+      # 子菜单名称: 链接地址 || 图标
+      Solitude: https://github.com/wleelw/hexo-theme-solitude || https://bu.dusays.com/2023/11/08/654af68b25bb8.jpg
 
   # 导航栏内容
   # Navigation bar content
   # tip：此部分内容是顶部导航栏中间菜单区域
   # tip: This part of the content is the menu area in the middle of the top navigation bar
   menu:
-    # 显示的大分类名称
-    # Displayed category name
-    文库:
-      # 点击跳转链接
-      # Click the jump link
-      # tip：如果没有子类就填跳转链接，例如：/archives，否则填false
-      # tip: If there is no subcategory, fill in the jump link, for example: /archives, otherwise fill in false
-      url: false
-      # 子类数组
-      # Subcategory array
-      child:
-        # 子类名称
-        # Subcategory name
-        文章列表:
-          # 点击跳转链接
-          # Click the jump link
-          url: /archives/
-          # 子类名称左侧图标
-          # Subcategory name left icon
-          icon: sco-folder-fill
-        全部分类:
-          url: /categories/
-          icon: sco-checkbox-multiple-blank-fill
-        全部标签:
-          url: /tags/
-          icon: sco-price-tag-fill
-    安装文档:
-      url: /categories/Docs/
-    作者博客:
-      url: https://blog.wzsco.cn
-    示例:
-      url: /links/
+    #  首页: / # 显示名称：路径 / Display name: path
+    文库: # 显示名称 / Display name
+      文章列表: /archives/ || sco-folder-fill # 子菜单名称：路径 || 图标 / Submenu name: path || icon
+      全部分类: /categories/ || sco-checkbox-multiple-blank-fill
+      全部标签: /tags/ || sco-price-tag-fill
+    示例: /links/
 
   # 导航栏右侧按钮
   # Button on the right side of the navigation bar
@@ -114,11 +66,11 @@ nav:
     # 从左至右
     # From left to right
     custom:
-      - name: 开往 - 友链接力 # 显示文字 / Displayed text
-        url: https://www.travellings.cn/go.html # 跳转链接 / Jump link
-        icon: sco-train-line # 图标 / Icon
-        onclick: # 点击事件 / Click event
-        id: travellings_button # id
+    # - name: 开往 - 友链接力 # 显示文字 / Displayed text
+    #   url: https://www.travellings.cn/go.html # 跳转链接 / Jump link
+    #   icon: sco-train-line # 图标 / Icon
+    #   onclick: # 点击事件 / Click event
+    #   id: travellings_button # id
 
 # 首页顶部样式
 # Home top style
@@ -140,7 +92,7 @@ hometop:
     # 轮播icon
     # Carousel icon
     icon:
-      # # 名字 / Name
+      # 名字 / Name
       HTML:
         # 图片 / Image
         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/HTML.png
@@ -168,33 +120,10 @@ hometop:
         img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/vs-logo.svg
         color: "#ffffff"
 
-  # 顶部三大分类
-  # Top three categories
-  categoryGroup:
-    # 左侧
-    # Left
-    G1:
-      # 显示文字
-      # Displayed text
-      name: 必看精选
-      # 显示图标
-      # Displayed icon
-      icon: scoicon sco-star-smile-fill
-      # 跳转链接
-      # Jump link
-      url: /tags/精选/
-    # 中间
-    # Middle
-    G2:
-      name: 热门文章
-      icon: scoicon sco-fire-fill
-      url: /categories/热门/
-    # 右侧
-    # Right
-    G3:
-      name: 安装教程
-      icon: scoicon sco-book-mark-fill
-      url: /tags/Docs/
+  # banner 左下跳转按钮
+  # Banner lower left jump button
+  group:
+    文档: /tags/Docs/ || sco-book-mark-fill || linear-gradient(to right,#358bff,#15c6ff)
 
   # 右侧置顶列表（在文章的front matter中添加“recommend: true”）
   # Right top list (add "recommend: true" in the front matter of the article)
@@ -204,16 +133,16 @@ hometop:
     sup: 置顶
     # 左下角大字
     # Large text in the lower left corner
-    title: 快速开始
+    title: 作者博客
     # 点击跳转链接
     # Click the jump link
-    url: /posts/a0e4c699.html
+    url: https://blog.wzsco.cn/
     # 显示背景图片
     # Display background image
-    img: https://bu.dusays.com/2024/02/16/65cf175219f61.png
+    img: /img/default.png
     # 阴影颜色
     # Shadow color
-    color: "#3D88D2"
+    color: "none"
 
 # --------------------------------------
 # Aside Settings
@@ -229,19 +158,19 @@ aside:
   home:
     # 固定的信息（滑动不跟随）
     # Fixed information (not followed by sliding)
-    noSticky: "about"
+    noSticky: "about,flip"
     # 不固定的信息（滑动跟随）
     # Unfixed information (sliding follow)
     Sticky: "allInfo"
   # 在文章页显示的侧边栏信息
   # Sidebar information displayed on the article page
   post:
-    noSticky: "about"
+    noSticky: "about,flip"
     Sticky: "newestPost"
   # 在页面中显示的侧边栏信息
   # Sidebar information displayed on the
   page:
-    noSticky: "about"
+    noSticky: "about,flip"
     Sticky: "newestPost,allInfo"
   # 侧边栏个人信息卡片
   # Sidebar personal information
@@ -292,32 +221,18 @@ aside:
       - 🧱 团队小组发动机
       - 💢 壮汉人狠话不多
       - 🎮 电竞游戏爱好者
+    # 个人信息卡片底部的小图标，按照例子填写
     information:
-      # # 悬停显示文字
-      Github:
-        # 图标
-        icon: scoicon sco-github-line
-        # 跳转链接
-        url: https://github.com/wleelw/hexo-theme-slitude
-      Bilibili:
-        icon: scoicon sco-qq-line
-        url: https://space.bilibili.com/1329819902
+      Github: https://github.com/wleelw || sco-github-line # 名称：链接 || 图标 / Name: link || icon
+      Bilibili: https://space.bilibili.com/1329819902 || sco-bilibili-line
 
   # 二维码
   # Official account QR code
   flip:
-    # 右下角头像
-    # Avatar in the lower right corner
-    favicon:
-    # 正面
-    # Front
-    face:
-    # 鼠标悬停翻转图片
-    # Mouse hover flip image
-    backface:
-    # 夜间模式下是否开启卡片背景颜色 true：使用背景颜色 / false：不使用背景颜色
-    # Whether to enable card background color in night mode true: use background color / false: do not use background color
-    darkcolor: false
+    favicon: "https://bu.dusays.com/2024/03/01/65e19d22194c7.png" # 右下角头像
+    face: "https://bu.dusays.com/2024/03/01/65e19d30d888d.png" # 正面
+    backface: "https://bu.dusays.com/2024/03/01/65e19d42e288b.png" # 鼠标悬停翻转图片
+    backcolor: "var(--sco-blue)"
 
   # 页面目录
   # Page directory
@@ -337,22 +252,22 @@ aside:
   tags:
     # 是否显示标签
     # Whether to display tags
-    enable: true
+    enable: false
     # 显示标签数量，当高于标签总数时，显示全部标签按钮
     # Display the number of tags, when it is higher than the total number of tags, display all tags button
     limit: 20
     # 高亮显示
     # Highlight
-    highlight: true
+    highlight: false
     # 高亮显示标签列表
     # Highlighted tag list
     list:
-      - "Docs"
+      - "Solitude-使用"
 
   # 侧边栏归档
   # aside archive
   archive:
-    enable: true
+    enable: false
     # 显示类型
     type: "month" # monthly: 按月 / yearly: 按年 : monthly: by month / yearly: by year
 
@@ -406,7 +321,7 @@ post:
     # 文章默认图片
     # default cover
     cover:
-      - /img/default.png # 默认图片 / default cover
+      - https://api.qjqq.cn/api/Img
     # 文章发布默认地址
     # default post locate
     locate: 衡阳
@@ -430,7 +345,7 @@ post:
     wordcount: true # 字数 / Number of words
     readtime: true # 访问 / uv
     pv: true # 浏览量 / pv
-    comment: true # 评论数 / Comment count
+    comment: false # 评论数 / Comment count
   # 打赏
   # reward
   award:
@@ -443,7 +358,7 @@ post:
     alipay: https://bu.dusays.com/2023/11/07/6549e79d02bd6.png
     # 打赏统计页面链接
     # Reward statistics page link
-    url: https://blog.wzsco.cn/about
+    url: https://blog.wzsco.cn/about/
   # 版权中订阅按钮跳转链接，填写地址后开启
   # Subscription button jump link in copyright
   rss: # /atom.xml
@@ -504,22 +419,12 @@ footer:
   # 底部上方一排图标
   # Bottom row of icons
   information:
-    # 左侧显示图标 / Left display icon
-    left:
-      Github:
-        icon: scoicon sco-bilibili-line
-        url: https://github.com/wleelw/hexo-theme-solitude
-      Mail:
-        icon: scoicon sco-mail-line
-        url: mailto:wleelw@wzsco.top
-    # 右侧显示图标 / Right display icon
-    right:
-      Bilibili:
-        icon: scoicon sco-bilibili-line
-        url: https://space.bilibili.com/1329819902
-      抖音:
-        icon: scoicon sco-douyin-fill
-        url: https://v.douyin.com/iJsLc8jt/
+    left: # 左侧显示图标
+      Github: https://github.com/wleelw || sco-github-line # 名称：链接 || 图标 / Name: link || icon
+      Mail: mailto:wleelw@wzsco.top || sco-mail-line
+    right: # 右侧显示图标
+      Bilibili: https://space.bilibili.com/1329819902 || sco-bilibili-line
+      抖音: https://v.douyin.com/iJsLc8jt/ || sco-douyin-fill
 
   # 底部导航栏
   # Bottom navigation bar
@@ -528,11 +433,10 @@ footer:
       归档: /archives/
       分类: /categories/
       标签: /tags/
+    服务:
+      51la统计: https://v6.51.la/
     支持:
-      打赏记录: /about/
-    关于:
-      作者博客: https://blog.wzsco.cn
-
+      爱发电: https://afdian.net/a/wleelw0u0
   # 底部随机友链
   # Random links at the bottom
   # tip：此处的友链是随机显示的，不是固定的
@@ -542,10 +446,10 @@ footer:
   randomlink: true
   # 隐私助手右侧弹窗，填写路径后开启
   # Privacy assistant right pop-up window, fill in the path to open
-  privacy: # /privacy/
+  privacy: https://blog.wzsco.cn/ # /privacy/
   # 版权
   # Copyright
-  license: # /license/
+  license: https://blog.wzsco.cn/ # /license/
   # 页脚右侧链接，例如：ICP备案号、公安备案号等
   # Footer right link, such as: ICP filing number, public security filing number, etc.
   links:
@@ -553,6 +457,8 @@ footer:
     # In order for the theme to get more support, it is recommended to keep the theme link
     - name: 主题
       url: https://github.com/wleelw/hexo-theme-solitude
+    - name: 作者博客
+      url: https://blog.wzsco.cn/
 #    - name: 订阅
 #      url: /atom.xml
 
@@ -568,7 +474,7 @@ errorpage:
   img: https://bu.dusays.com/2023/03/03/6401a7906aa4a.gif
   # 文字
   # text
-  text: 页面未找到
+  text: =awa= 页面走丢了
   # 推荐文章列表
   # Recommended article list
   recommendList: true
@@ -618,7 +524,7 @@ music:
 # 音乐胶囊
 # capsule music
 capsule:
-  enable: false
+  enable: true
   id: 8407304077 # 歌单id / playlist id
   server: netease # 播放列表的服务商。netease：网易云 / tencent：腾讯 / kugou：酷狗 / xiami：小米 / baidu：百度 : Music service provider. netease: Netease Cloud / tencent: Tencent / kugou: Kugou / xiaomi: Xiaomi / baidu: Baidu
   type: playlist # 播放列表的类型。song：单曲 / playlist：歌单 / album：专辑 / artist：歌手 : Type of playlist. song: Single / playlist: Playlist / album: Album / artist: Singer
@@ -673,9 +579,6 @@ keyboard:
     - name: 打开友情链接
       key: L
       url: "/links/"
-    - name: 前往作者博客
-      key: B
-      url: "https://blog.wzsco.cn"
 
 # 懒加载
 # lazyload
@@ -712,7 +615,7 @@ hightlight:
   theme: default # default: 默认 / mac : apple terminal
   # 代码配色
   # Code color
-  color: monokai # default: 默认  / vscode / solarized-dark / solarized-light / dracula / monokai
+  color: vscode # default: 默认  / vscode / solarized-dark / solarized-light / dracula / monokai
 
 # 图片灯箱
 # image lightbox
@@ -730,7 +633,7 @@ mediumZoom: false
 # 简繁转换
 # Simplified and Traditional Chinese conversion
 translate:
-  enable: false
+  enable: true
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
   defaultEncoding: 2
   # Time delay
@@ -765,7 +668,7 @@ busuanzi: true
 # warning：开启前需要安装搜索插件
 # warning: You need to install the search plugin before turning it on
 search:
-  enable: false
+  enable: true
   # algolia, local
   type: local
   # 推荐标签
@@ -783,25 +686,25 @@ search:
 # rightside(右键菜单)
 # right menu
 rightside:
-  enable: false
+  enable: true
 
 # 文章摘要AI
 # post abstract AI
 post_ai:
-  enable: false
+  enable: true
   # 右侧显示的模型名称
   # Model name displayed on the right
   modelName: GPT 4
   # key
   # 具体获取方法见文档
   # Specific acquisition method, see the document
-  key:
+  key: Qi7QIXLOrxLCyKBW0bie
   # 自介
   # talk
   talk: 我是王卓Sco开发的摘要生成助理ScoGPT，ScoGPT在静态部署时进行摘要的撰写，并且在访客访问时通过ScoCorrection转译后的文本摘要实现工具。我在这里只负责已经生成的摘要显示，你无法与我直接沟通，但我可以回答一些预设的问题。
   # 随机文章按钮
   # Random post button
-  randomPost: false
+  randomPost: true
   # 举报链接，不填不显示
   # Report link, do not fill in and do not display
   report: https://blog.wzsco.top/about/
@@ -819,10 +722,10 @@ katex:
 # 评论
 # comment
 comment:
-  enable: false
-  type: # waline, twikoo
-  commentBarrage: false # 热评开关 / Hot comment switch
-  newComment: false # 最新评论开关 / Latest comment switch
+  enable: true
+  type: waline # waline, twikoo
+  commentBarrage: true # 热评开关 / Hot comment switch
+  newComment: true # 最新评论开关 / Latest comment switch
   # 匿名评论前部分随机信息 / Anonymous comment front random information
   randomInfoStart:
     - "聪敏的"
@@ -842,9 +745,14 @@ comment:
   # waline 配置信息
   # waline settings
   waline: # https://waline.js.org/
-    envId: # url: https://waline.wzsco.top
-    pageview: true # 是否开启页面访问量统计 / Whether to enable page access statistics
+    envId: https://waline-netlify.netlify.app/.netlify/functions/comment  # url: https://waline.wzsco.top
+    pageview: false # 是否开启页面访问量统计 / Whether to enable page access statistics
     option: # waline配置项 / waline configuration item
+      emoji:
+        - https://cdn.cbd.int/@waline/emojis@1.2.0/bilibili
+        - https://cdn.cbd.int/@waline/emojis@1.2.0/bmoji
+        - https://cdn.cbd.int/@waline/emojis@1.2.0/alus
+      login: disable
 
 # 站点验证
 # Site verification
@@ -895,7 +803,7 @@ CDN:
   # The CDN provider of internal scripts (主题内 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # Dev version can only choose. ( dev版本只能为 local )
-  internal: local
+  internal: custom
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
   # option: jsdelivr/unpkg/cdnjs/custom
   third_party: custom

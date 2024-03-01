@@ -16,77 +16,75 @@ cover: https://bu.dusays.com/2024/02/16/65cf1b89c382a.png
 **主题配置文件**: `_config.solitude.yml`
 
 ```yaml
-# 底部上方一排图标
-# Bottom row of icons
-information:
-  left: # 左侧显示图标 / Left display icon
-    Github:
-      icon: scoicon sco-bilibili-line
-      url: https://github.com/wleelw
-    Mail:
-      icon: scoicon sco-mail-line
-      url: mailto:wleelw@wzsco.top
-  right: # 右侧显示图标 / Right display icon
-    Bilibili:
-      icon: scoicon sco-bilibili-line
-      url: https://space.bilibili.com/1329819902
-    抖音:
-      icon: scoicon sco-douyin-fill
-      url: https://v.douyin.com/iJsLc8jt/
+  # 底部上方一排图标
+  # Bottom row of icons
+  information:
+     left: # 左侧显示图标
+       Github: https://github.com/wleelw || sco-github-line # 名称：链接 || 图标 / Name: link || icon
+       Mail: mailto:wleelw@wzsco.top || sco-mail-line
+     right: # 右侧显示图标
+       Bilibili: https://space.bilibili.com/1329819902 || sco-bilibili-line
+       抖音: https://v.douyin.com/iJsLc8jt/ || sco-douyin-fill
 ```
+
+![information](https://bu.dusays.com/2024/03/01/65e1a31e36b10.png)
 
 ### 导航栏
 
 **主题配置文件**: `_config.solitude.yml`
 
 ```yaml
-# 底部导航栏
-# Bottom navigation bar
-group: # 从左至右 / From left to right
-  导航:
-    归档: /archives/
-    分类: /categories/
-    标签: /tags/
-  服务:
-    阿里云: https://aliyun.com/
-    51la统计: https://v6.51.la/
-    百度统计: https://tongji.baidu.com/
-  支持:
-    打赏记录: /about/
-  协议:
-    Cookies: /cookies/
-    用户协议: /privacy/
-    版权协议: /copyright/
+  # 底部导航栏
+  # Bottom navigation bar
+  group:
+    导航:
+      归档: /archives/
+      分类: /categories/
+      标签: /tags/
+    服务:
+      阿里云: https://aliyun.com/
+      51la统计: https://v6.51.la/
+      百度统计: https://tongji.baidu.com/
+    支持:
+      打赏记录: /about/
+    协议:
+      Cookies: /cookies/ 
+      用户协议: /privacy/ 
+      版权协议: /copyright/
 ```
+
+![底部导航栏](https://bu.dusays.com/2024/03/01/65e1a3e06e5fd.png)
 
 ### 页脚信息
 
 **主题配置文件**: `_config.solitude.yml`
 
 ```yaml
-# 底部随机友链
-# Random links at the bottom
-# tip：此处的友链是随机显示的，不是固定的
-# tip: The links here are displayed randomly, not fixed
-# warning: 打开前必须先配置links
-# warning: links must be configured before opening
-randomlink: false
-# 隐私助手右侧弹窗，填写路径后开启
-# Privacy assistant right pop-up window, fill in the path to open
-privacy: # /privacy/
-# 版权
-# Copyright
-license: # /license/
-# 页脚右侧链接，例如：ICP备案号、公安备案号等
-# Footer right link, such as: ICP filing number, public security filing number, etc.
-links:
-  # 为了主题能够得到更多的支持，建议保留主题链接
-  # In order for the theme to get more support, it is recommended to keep the theme link
-  - name: 主题
-    url: https://github.com/wleelw/hexo-theme-solitude
-  - name: 订阅
-    url: /atom.xml
+  # 底部随机友链
+  # Random links at the bottom
+  # tip：此处的友链是随机显示的，不是固定的
+  # tip: The links here are displayed randomly, not fixed
+  # warning: 打开前必须先配置links
+  # warning: links must be configured before opening
+  randomlink: false
+  # 隐私助手右侧弹窗，填写路径后开启
+  # Privacy assistant right pop-up window, fill in the path to open
+  privacy: # /privacy/
+  # 版权
+  # Copyright
+  license: # /license/
+  # 页脚右侧链接，例如：ICP备案号、公安备案号等
+  # Footer right link, such as: ICP filing number, public security filing number, etc.
+  links:
+     # 为了主题能够得到更多的支持，建议保留主题链接
+     # In order for the theme to get more support, it is recommended to keep the theme link
+     - name: 主题
+       url: https://github.com/wleelw/hexo-theme-solitude
+  #    - name: 订阅
+  #      url: /atom.xml
 ```
+
+![页脚信息](https://bu.dusays.com/2024/03/01/65e1a42de12e2.png)
 
 ## 404 页面
 
@@ -123,6 +121,8 @@ capsule:
   type: playlist # 播放列表的类型。song：单曲 / playlist：歌单 / album：专辑 / artist：歌手 : Type of playlist. song: Single / playlist: Playlist / album: Album / artist: Singer
 ```
 
+![音乐胶囊](https://bu.dusays.com/2024/03/01/65e1a4d523477.png)
+
 ## 快捷菜单
 
 > 配置可参考作者文章：[Solitude主题使用：如何配置快捷菜单](https://blog.wzsco.cn/p/88973ede.html)
@@ -158,6 +158,8 @@ keyboard:
 #      key: L
 #      url: '/links/'
 ```
+
+![快捷菜单](https://bu.dusays.com/2024/03/01/65e1a5055f42d.png)
 
 ## 懒加载
 

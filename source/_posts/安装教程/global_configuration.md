@@ -55,90 +55,48 @@ site:
 **主题配置文件**: `_config.solitude.yml`
 
 ```yaml
-#导航栏左侧
-# left
-left:
-  # 是否开启左侧导航栏
-  # Whether to enable the left navigation bar
-  enable: false
-  # 导航栏显示的内容
-  # Content displayed in the navigation bar
-  menu:
-     # 显示分类名
-     # Display category name
-     项目:
-       # 显示子类
-       # Display subcategories
-       Solitude:
-         # 显示的图标
-         # Displayed icon
-         icon: https://bu.dusays.com/2023/11/08/654af68b25bb8.jpg
-         # 点击的跳转链接
-         # Click the jump link
-         url: https://github.com/DuoSco/Hexo-Theme-solitude
+  # 导航栏左侧
+  # Left side of the navigation bar
+  group:
+    # 分类名称: 链接地址 || 图标
+    # Category name: link address || icon
+    项目:
+      # 子菜单名称: 链接地址 || 图标
+      # Submenu name: link address || icon
+      Solitude: https://github.com/wleelw/hexo-theme-solitude || https://bu.dusays.com/2023/11/08/654af68b25bb8.jpg
 ```
+
+![左侧项目](https://bu.dusays.com/2024/03/01/65e19e72395ff.png)
 
 ### 中心
 
 **主题配置文件**: `_config.solitude.yml`
 
 ```yaml
-# 导航栏内容
-# Navigation bar content
-# tip：此部分内容是顶部导航栏中间菜单区域
-# tip: This part of the content is the menu area in the middle of the top navigation bar
-menu:
-  # 显示的大分类名称
-  # Displayed category name
-  文库:
-    # 点击跳转链接
-    # Click the jump link
-    # tip：如果没有子类就填跳转链接，例如：/archives，否则填false
-    # tip: If there is no subcategory, fill in the jump link, for example: /archives, otherwise fill in false
-    url: false
-    # 子类数组
-    # Subcategory array
-    child:
-      # 子类名称
-      # Subcategory name
-      文章列表:
-        # 点击跳转链接
-        # Click the jump link
-        url: /archives/
-        # 子类名称左侧图标
-        # Subcategory name left icon
-        icon: sco-folder-fill
-      全部分类:
-        url: /categories/
-        icon: sco-checkbox-multiple-blank-fill
-      全部标签:
-        url: /tags/
-        icon: sco-price-tag-fill
-  友链:
-    url: false
-    child:
-      友情链接:
-        url: /links/
-        icon: sco-group-fill
-      宝藏博主:
-        url: javascript:travelling()
-        icon: sco-gift-fill
-  我的:
-    url: false
-    child:
-      装备:
-        url: /equipment/
-        icon: sco-laptop-line
-      工具箱:
-        url: /tlink/
-        icon: sco-tools-fill
-  关于:
-    url: false
-    child:
-      关于本站:
-        url: /about/
-        icon: sco-contacts-fill
+  # 导航栏内容
+  # Navigation bar content
+  # tip：此部分内容是顶部导航栏中间菜单区域
+  # tip: This part of the content is the menu area in the middle of the top navigation bar
+  menu:
+    首页: / # 显示名称：路径 / Display name: path
+    文库: # 显示名称 / Display name
+      文章列表: /archives/ || sco-folder-fill # 子菜单名称：路径 || 图标 / Submenu name: path || icon
+      全部分类: /categories/ || sco-checkbox-multiple-blank-fill
+      全部标签: /tags/ || sco-price-tag-fill
+    友链:
+      友链鱼塘: /moments/ || sco-wifi-fill
+      友情链接: /links/ || sco-group-fill
+      宝藏博主: javascript:travelling() || sco-gift-fill
+    我的:
+      相册集: /gallery/ || sco-image-fill
+      装备: /equipment/ || sco-laptop-line
+      工具箱: /tlink/ || sco-tools-fill
+      音乐馆: /music/ || sco-disc-fill
+    关于:
+      关于本站: /about/ || sco-contacts-fill
 ```
+
+![导航菜单](https://bu.dusays.com/2024/03/01/65e19f08af41e.png)
 
 ### 右侧
 ```yaml
@@ -159,6 +117,8 @@ right:
       id: travellings_button # id
 
 ```
+
+![右侧按钮](https://bu.dusays.com/2024/03/01/65e19f465b536.png)
 
 ## 首页顶部
 
@@ -183,61 +143,40 @@ hometop:
     # 轮播icon
     # Carousel icon
     icon:
-      # 名字 / Name
-      HTML:
-        # 图片 / Image
-        img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/HTML.png
-        # 背景色 / Background color
-        color: '#e9572b'
-      JS:
-        img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/JS.png
-        color: '#f7cb4f'
-      Kotlin:
-        img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/kotlin-logo.svg
-        color: '#ffffff'
-      Docker:
-        img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/docker.png
-        color: '#57b6e6'
-      Flutter:
-        img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/flutter.png
-        color: '#ffffff'
-      WebPack:
-        img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/webpack.png
-        color: '#2e3a41'
-      Git:
-        img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/git.png
-        color: '#df5b40'
-      VS:
-        img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/vs-logo.svg
-        color: '#ffffff'
+    # # 名字 / Name
+    # HTML:
+    #   # 图片 / Image
+    #   img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/HTML.png
+    #   # 背景色 / Background color
+    #   color: "#e9572b"
+    # JS:
+    #   img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/JS.png
+    #   color: "#f7cb4f"
+    # Kotlin:
+    #   img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/kotlin-logo.svg
+    #   color: "#ffffff"
+    # Docker:
+    #   img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/docker.png
+    #   color: "#57b6e6"
+    # Flutter:
+    #   img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/flutter.png
+    #   color: "#ffffff"
+    # WebPack:
+    #   img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/webpack.png
+    #   color: "#2e3a41"
+    # Git:
+    #   img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/git.png
+    #   color: "#df5b40"
+    # VS:
+    #   img: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/vs-logo.svg
+    #   color: "#ffffff"
 
-  # 顶部三大分类
-  # Top three categories
-  categoryGroup:
-    # 左侧
-    # Left
-    G1:
-      # 显示文字
-      # Displayed text
-      name: 必看精选
-      # 显示图标
-      # Displayed icon
-      icon: scoicon sco-star-smile-fill
-      # 跳转链接
-      # Jump link
-      url: /tags/精选/
-    # 中间
-    # Middle
-    G2:
-      name: 热门文章
-      icon: scoicon sco-fire-fill
-      url: /categories/热门/
-    # 右侧
-    # Right
-    G3:
-      name: 实用教程
-      icon: scoicon sco-book-mark-fill
-      url: /tags/教程/
+    # banner 左下跳转按钮
+    # Banner lower left jump button
+    group:
+    #  热门: /tags/热门/ || sco-fire-fill || linear-gradient(to right,#f65,#ffbf37)
+    #  教程: /tags/教程/ || sco-book-mark-fill || linear-gradient(to right,#358bff,#15c6ff)
+    #  精选: /tags/精选/ || sco-star-smile-fill || linear-gradient(to right,#18e7ae,#1eebeb)
 
   # 右侧置顶列表（在文章的front matter中添加“recommend: true”）
   # Right top list (add "recommend: true" in the front matter of the article)
@@ -256,12 +195,14 @@ hometop:
     img: /img/default.png
     # 阴影颜色
     # Shadow color
-    color: 'none'
+    color: "#ff0000"
 ```
 
 {% note info %}
 开启 banner 必须填写 icon ，否则会报错。 开启后可在文章的front matter中添加recommend: true，即可在右侧显示置顶文章。
 {% endnote %}
+
+![首页顶部](https://bu.dusays.com/2024/03/01/65e19fd1867bf.png)
 
 ## 侧边栏
 
@@ -286,65 +227,63 @@ page: # 在页面中显示的侧边栏信息
 **主题配置文件**: `_config.solitude.yml`
 
 ```yaml
-# 侧边栏个人信息卡片
-# Sidebar personal information
-card:
-  # 头像信息
-  # Avatar information
-  author:
-    # 头像
-    # Avatar
-    img: https://bu.dusays.com/2023/11/08/654af68b25bb8.jpg
-    # 表情图片链接
-    # Emoticon image link
-    # tip: 推荐尺寸 26x26
-    # tip: Recommended size 26x26
-    sticker: https://bu.dusays.com/2023/12/30/659011053e246.png
-  # 文案1
-  # label1
-  # tip：可使用html标签
-  # tip: html tags can be used
-  content: 分享自己对编程的<b>热爱</b>，对美好生活的<b>向往</b>，对知识海洋<b>探索历程</b>。
-  # 文案2
-  # label2
-  # tip：可使用html标签
-  # tip: html tags can be used
-  content2: 相信你可以在这里找到对你有用的知识和教程。
-  # 个人信息卡片底部的小图标，按照例子填写
-  # Small icons at the bottom of the personal information card, fill in according to the example
-  # 个人信息卡片顶部按钮的打招呼语句
-  # Greeting statement of the button at the top of the personal information card
-  sayhello:
-    morning: 一日之计在于晨
-    noon: 吃饱了才有力气干活
-    afternoon: 集中精力，攻克难关
-    night: 不要太劳累了，早睡更健康
-    goodnight: 睡个好觉，保证精力充沛
-  # 个人信息卡片顶部按钮的切换文字
-  # Switching text of the button at the top of the personal information card
-  sayhello2:
-    - 🤖️ 数码科技爱好者
-    - 🔍 分享与热心帮助
-    - 🏠 智能家居小能手
-    - 🔨 设计开发一条龙
-    - 🤝 专修交互与设计
-    - 🏃 脚踏实地行动派
-    - 🧱 团队小组发动机
-    - 💢 壮汉人狠话不多
-    - 🎮 电竞游戏爱好者
-  # 个人信息卡片底部的小图标，按照例子填写
-  # Small icons at the bottom of the personal information card, fill in according to the example
-  information:
-    # 悬停显示文字
-    Github:
-      # 图标
-      icon: scoicon sco-github-line
-      # 跳转链接
-      url: https://github.com/DuoSco/Hexo-Theme-slitude
-    Bilibili:
-      icon: scoicon sco-bilibili-line
-      url: https://space.bilibili.com/1329819902
+  # 侧边栏个人信息卡片
+  # Sidebar personal information
+  card:
+    # 头像信息
+    # Avatar information
+    author:
+      # 头像
+      # Avatar
+      img: https://bu.dusays.com/2023/11/08/654af68b25bb8.jpg
+      # 表情图片链接
+      # Emoticon image link
+      # tip: 推荐尺寸 26x26
+      # tip: Recommended size 26x26
+      sticker: https://bu.dusays.com/2023/12/30/659011053e246.png
+    # 点击作者名称跳转链接
+    # Click the author name to jump link
+    url: /about/
+    # 文案1
+    # label1
+    # tip：可使用html标签
+    # tip: html tags can be used
+    content: 分享自己对编程的<b>热爱</b>，对美好生活的<b>向往</b>，对知识海洋<b>探索历程</b>。
+    # 文案2
+    # label2
+    # tip：可使用html标签
+    # tip: html tags can be used
+    content2: 相信你可以在这里找到对你有用的知识和教程。
+    # 个人信息卡片底部的小图标，按照例子填写
+    # Small icons at the bottom of the personal information card, fill in according to the example
+    # 个人信息卡片顶部按钮的打招呼语句
+    # Greeting statement of the button at the top of the personal information card
+    sayhello:
+      morning: 一日之计在于晨
+      noon: 吃饱了才有力气干活
+      afternoon: 集中精力，攻克难关
+      night: 不要太劳累了，早睡更健康
+      goodnight: 睡个好觉，保证精力充沛
+    # 个人信息卡片顶部按钮的切换文字
+    # Switching text of the button at the top of the personal information card
+    sayhello2:
+      - 🤖️ 数码科技爱好者
+      - 🔍 分享与热心帮助
+      - 🏠 智能家居小能手
+      - 🔨 设计开发一条龙
+      - 🤝 专修交互与设计
+      - 🏃 脚踏实地行动派
+      - 🧱 团队小组发动机
+      - 💢 壮汉人狠话不多
+      - 🎮 电竞游戏爱好者
+    # 个人信息卡片底部的小图标，按照例子填写
+    information:
+      Github: https://github.com/wleelw || sco-github-line # 名称：链接 || 图标 / Name: link || icon
+      Bilibili: https://space.bilibili.com/1329819902 || sco-bilibili-line
 ```
+
+![无悬停](https://bu.dusays.com/2024/03/01/65e1a0613de56.png) 
+![悬停](https://bu.dusays.com/2024/03/01/65e1a0d73ca71.png) 
 
 ### 推荐二维码
 
@@ -368,6 +307,8 @@ flip:
   darkcolor: false
 ```
 
+![推荐二维码](https://bu.dusays.com/2024/03/01/65e1a112b5546.png)
+
 ### 目录
 
 **主题配置文件**: `_config.solitude.yml`
@@ -386,6 +327,8 @@ toc:
   # After opening, there is a fuzzy effect without hovering over the directory
   vague: true
 ```
+
+![目录](https://bu.dusays.com/2024/03/01/65e1a1598c38e.png)
 
 ### 标签
 
@@ -408,6 +351,8 @@ tags:
     - 'Solitude-使用'
 ```
 
+![标签](https://bu.dusays.com/2024/03/01/65e1a1977c954.png)
+
 ### 归档
 
 **主题配置文件**: `_config.solitude.yml`
@@ -420,6 +365,8 @@ archive:
   # 显示类型
   type: 'month' # monthly: 按月 / yearly: 按年 : monthly: by month / yearly: by year
 ```
+
+![归档](https://bu.dusays.com/2024/03/01/65e1a1f5e2d98.png)
 
 ### 建站信息
 
@@ -591,3 +538,5 @@ related_post:
   limit: 2 # 推荐文章数量
   date_type: created # 根据创建日期（created）或是更新日期（updated）
 ```
+
+![推荐文章](https://bu.dusays.com/2024/03/01/65e1a28bd7076.png)
