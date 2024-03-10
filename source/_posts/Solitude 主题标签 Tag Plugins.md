@@ -9,8 +9,9 @@ categories:
 tags:
   - [ Solitude ]
   - [ 精选 ]
-cover: https://bu.dusays.com/2024/01/24/65b11236a3dd2.png
+cover: https://7.isyangs.cn/34/65ed44d710c5f-34.png
 sticky: 1
+comment: false
 ---
 
 {% note simple primary %}

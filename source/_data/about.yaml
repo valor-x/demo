@@ -8,10 +8,10 @@ authorinfo:
     - "团队小组发动机 🧱"
     - "壮汉人狠话不多 💢"
   title: 关于本站
-  image: "https://bu.dusays.com/2023/11/08/654af68b25bb8.jpg"
+  image: "https://7.isyangs.cn/34/65ed3a36ab0e5-34.jpg"
 contentinfo:  # 顶部个人信息展示
   sup: 你好，很高兴认识你👋
-  name: 我叫王卓Sco  # 名称
+  name: 我叫 Efuo # 名称
   title: 是一名学生、软件工程师、独立开发者、博主  # 介绍
   tip: 追求
   slogan: 源于<br>热爱而去创造
@@ -26,26 +26,23 @@ skills: # 根据需求添加
   subtitle: 开启创造力
   tags:
     - title: HTML
-      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/HTML.png
+      icon: https://7.isyangs.cn/34/65ed41bb25d03-34.png
       color: '#e9572b'
     - title: Javascript
-      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/JS.png
+      icon: https://7.isyangs.cn/34/65ed41c9ca3f7-34.png
       color: '#f7cb4f'
     - title: Kotlin
-      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/kotlin-logo.svg
+      icon: https://7.isyangs.cn/34/65ed41e858ca4-34.png
       color: '#ffffff'
     - title: WebPack
-      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/webpack.png
+      icon: https://7.isyangs.cn/34/65ed420f30a30-34.png
       color: '#2e3a41'
     - title: Git
-      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/git.png
+      icon: https://7.isyangs.cn/34/65ed421e5a102-34.png
       color: '#df5b40'
     - title: Docker
-      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/docker.png
+      icon: https://7.isyangs.cn/34/65ed41f609691-34.png
       color: '#57b6e6'
-    - title: Visual Studio
-      icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/vs-logo.svg
-      color: '#ffffff'
 careers:
   title: "生涯"
   subtitle: "无限进步"
@@ -53,7 +50,7 @@ careers:
     - school: "软件工程"
       major: "学习"
       color: "#357ef5"
-  image: https://bu.dusays.com/2024/01/24/65b107507e94e.png
+  image: https://7.isyangs.cn/34/65ed51e107cdd-34.png
 
 personalities:
   tips: "性格"
@@ -65,7 +62,7 @@ personalities:
   linkText: "16personalities"
   typeLink: "https://www.16personalities.com/ch/esfj-人格"
   typeName: "执政官"
-  myphoto: https://bu.dusays.com/2024/01/24/65b1076131876.png
+  myphoto: https://7.isyangs.cn/34/65ed54016f8de-34.jpeg
 
 motto:
   title: 座右铭
@@ -80,29 +77,29 @@ expertise:
 
 game1:
   title: "爱好游戏"
-  img: https://bu.dusays.com/2023/12/28/658d0d9ca8816.png
+  img: https://7.isyangs.cn/34/65ed51f536942-34.png
   icon: "fas fa-gamepad"
   subtitle: "APEX LEGENDS"
   tips_left: C位
   tips_right: ID Wleelw
 game2:
   title: "爱好游戏"
-  img: https://bu.dusays.com/2023/12/28/658d0dadecc0b.png
+  img: https://7.isyangs.cn/34/65ed5207d3afd-34.png
   subtitle: 精灵与萤火意志
   icon: "fas fa-dice-d20"
   tips_right: "跑图大师"
 
 likes:	#
   - type: like-technology
-    bg: https://bu.dusays.com/2024/01/24/65b10775c2aa2.png
+    bg: https://7.isyangs.cn/34/65ed52dca2e76-34.png
     tips: 关注偏好
-    title: 数理化
-    subtips: 理工男
+    title: Vue、Node、Nuxt
+    subtips: 跟 Efuo 一起探索更多技术
   - type: like-music
-    bg: https://bu.dusays.com/2024/01/24/65b107861301a.png
+    bg: https://7.isyangs.cn/34/65ed526e6e3c6-34.png
     tips: 音乐偏好
     title: 民谣、古典、轻音乐
-    subtips: 跟 王卓Sco 一起欣赏更多音乐
+    subtips: 跟 Efuo 一起欣赏更多音乐
     button: true
     button_text: 更多推荐
     button_link: /music/
@@ -115,12 +112,12 @@ oneself:	# 按需填写
   major: '软件工程'	# 专业
   occupation: '学生'	# 职位
   map:	# 你所在位置的地图
-    light: https://bu.dusays.com/2024/01/24/65b107965343b.png	# 白天
-    dark: https://bu.dusays.com/2024/01/24/65b107a47f9db.png	# 夜晚
+    light: https://7.isyangs.cn/34/65ed53433481e-34.png	# 白天
+    dark: https://7.isyangs.cn/34/65ed5352910b9-34.png	# 夜晚
 
 tj:	# 统计
-  url: https://v6-widget.51.la/v6/3F15j2vtdTo7PPcN/quote.js	# 需要到51la官网注册自行获取
-  img: https://bu.dusays.com/2024/01/24/65b107b429001.png # 背景
+  url: https://v6-widget.51.la/v6/JduKh41OtkNBcW5g/quote.js	# 需要到51la官网注册自行获取
+  img: https://7.isyangs.cn/34/65ed53668b8a9-34.png # 背景
 
 #自定义
 cause:

@@ -1,20 +1,20 @@
 links:
   - class_name: 推荐
-    descr: 博主关注的博客
+    descr: 对主题开发作出贡献的朋友
     type: card
     link_list:
-      - name: 王卓Sco
-        link: https://blog.wzsco.top/
-        avatar: https://bu.dusays.com/2024/01/24/65b10b4771c0d.png
-        descr: 宁静致远，热爱生活。
-        topimg: https://bu.dusays.com/2024/01/24/65b10b61d3977.png
+      - name: Efuo
+        link: https://efu.me/
+        avatar: https://avatars.githubusercontent.com/u/74389842?v=4
+        descr: Be careful and enjoy it.
+        topimg: https://avatars.githubusercontent.com/u/74389842?v=4
         tag: 开发者
         color: vip
       - name: 张洪Heo
         link: https://blog.zhheo.com/
-        avatar: https://bu.dusays.com/2024/01/24/65b10b74d2b70.png
+        avatar: https://7.isyangs.cn/34/65ed4fc755de1-34.png
         descr: 分享设计与科技生活
-        topimg: https://bu.dusays.com/2024/01/24/65b10b86c2d1c.png
+        topimg: https://7.isyangs.cn/34/65ed4fd902699-34.png
         tag: 设计师
         color: vip
       - name: 亦小封
@@ -22,17 +22,23 @@ links:
         tag: 亦封
         descr: 胶片和文字都能记录生活.
         color: vip
-        avatar: https://bu.dusays.com/2024/01/24/65b10b969810a.png
-        topimg: https://bu.dusays.com/2024/01/24/65b10b969810a.png
-
+        avatar: https://7.isyangs.cn/34/65ed501bb6ee8-34.png
+        topimg: https://7.isyangs.cn/34/65ed501bb6ee8-34.png
+      - name: isYangs
+        link: https://isyangs.cn/
+        tag: isYangs
+        descr: 一个前端Bug构造师的博客
+        color: vip
+        avatar: https://7.isyangs.cn/34/65ed5769307f0-34.png
+        topimg: https://7.isyangs.cn/34/65ed5769307f0-34.png
   - class_name: 技术
     descr: 技术博客
     type: item
     link_list:
-      - name: 王卓Sco
-        link: https://blog.wzsco.top/
-        avatar: https://bu.dusays.com/2024/01/24/65b10b4771c0d.png
-        descr: 宁静致远，热爱生活。
+      - name: Efuo
+        link: https://efu.me/
+        avatar: https://avatars.githubusercontent.com/u/74389842?v=4
+        descr: Be careful and enjoy it.
         tag: 开发者
         color: vip
       - name: 亦小封
@@ -40,7 +46,7 @@ links:
         tag: 亦封
         descr: 胶片和文字都能记录生活.
         color: vip
-        avatar: https://bu.dusays.com/2024/01/24/65b10b969810a.png
+        avatar: https://7.isyangs.cn/34/65ed501bb6ee8-34.png
       - name: btwoa
         link: https://blog.btwoa.com
         tag: 摆子
@@ -54,7 +60,7 @@ links:
     link_list:
       - name: 张洪Heo
         link: https://blog.zhheo.com/
-        avatar: https://bu.dusays.com/2024/01/24/65b10b74d2b70.png
+        avatar: https://7.isyangs.cn/34/65ed4fc755de1-34.png
         descr: 分享设计与科技生活
         tag: 设计师
         color: speed

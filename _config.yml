@@ -154,3 +154,44 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
+
+# hexo-douban
+douban:
+  id: 270559401
+  builtin: true
+  item_per_page: 10
+  meta_max_line: 4
+  customize_layout: page
+  book:
+    path: books/index.html
+    title: 读书
+    quote: 从书中得到的知识，比从其他任何地方得到的知识都更有价值。
+    option:
+      type: douban
+      cover: https://api.qjqq.cn/api/Img
+      desc: 读书是一种享受
+  movie:
+    path: movies/index.html
+    title: '电影'
+    quote: 从电影中感悟，比从其他任何地方感悟都更深刻。
+    option:
+      type: douban
+      cover: https://api.qjqq.cn/api/Img
+      desc: 电影是一种享受
+  game:
+    path: games/index.html
+    title: '游戏'
+    quote: 游戏时的快乐，比其他任何时候的快乐都更真实。
+    option:
+      type: douban
+      cover: https://api.qjqq.cn/api/Img
+      desc: 游戏是一种享受
+  song:
+    path: songs/index.html
+    title: '歌曲'
+    quote: 歌曲中的情感，比其他任何地方的情感都更丰富。
+    option:
+      type: douban
+      cover: https://api.qjqq.cn/api/Img
+      desc: 歌曲是一种享受
+  timeout: 10000 
