@@ -36,7 +36,7 @@
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^1.0.0",
-    "hexo-theme-solitude": "^1.4.7",
+    "hexo-theme-solitude": "^1.5.2",
     "hexo-wordcount": "^6.0.1"
   }
 }

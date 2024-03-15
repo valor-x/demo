@@ -12,20 +12,20 @@ nav:
 
   menu:
     文库:
-      文章列表: /archives/ || sco-folder-fill
-      全部分类: /categories/ || sco-checkbox-multiple-blank-fill
-      全部标签: /tags/ || sco-price-tag-fill
+      文章列表: /archives/ || st-folder-fill
+      全部分类: /categories/ || st-checkbox-multiple-blank-fill
+      全部标签: /tags/ || st-price-tag-fill
     娱乐:
-      音乐: /songs/ || sco-disc-fill
-      读书: /books/ || sco-book-mark-fill
-      电影: /movies/ || sco-film-fill
+      音乐: /songs/ || st-disc-fill
+      读书: /books/ || st-book-mark-fill
+      电影: /movies/ || st-film-fill
     我的:
-      即刻短文: /essay/ || sco-says
-      在线工具: /tlink/ || sco-tools-fill
-      我的装备: /equipment/ || sco-laptop-line
+      即刻短文: /essay/ || st-says
+      在线工具: /tlink/ || st-tools-fill
+      我的装备: /equipment/ || st-laptop-line
     关于:
-      关于我: /about/ || sco-contacts-fill
-      音乐馆: /music/ || sco-disc-fill
+      关于我: /about/ || st-contacts-fill
+      音乐馆: /music/ || st-disc-fill
     示例: /links/
     留言板: /messageboard/
 
@@ -35,13 +35,13 @@ nav:
     custom:
       - name: Open On Github
         url: https://github.com/valor-x/hexo-theme-solitude
-        icon: sco-github-line
+        icon: st-github-line
         onclick:
         id: travellings_button
 
 hometop:
+  enable: true
   banner:
-    enable: true
     title: 一款优雅<br>的Hexo 主题
     url: Hexo Theme Solitude
     icon:
@@ -68,8 +68,8 @@ hometop:
         color: "#df5b40"
 
   group:
-    作者: https://github.com/efuo || sco-github-line || linear-gradient(to right,#358bff,#15c6ff)
-    文档: https://solitude-docs.efu.me || sco-book-mark-fill || linear-gradient(to right,#f7cb4f,#e9572b)
+    作者: https://github.com/efuo || st-github-line || linear-gradient(to right,#358bff,#15c6ff)
+    文档: https://solitude-docs.efu.me || st-book-mark-fill || linear-gradient(to right,#f7cb4f,#e9572b)
 
   recommendList:
     sup: 置顶
@@ -112,14 +112,14 @@ aside:
       - 💢 壮汉人狠话不多
       - 🎮 电竞游戏爱好者
     information:
-      Github: https://github.com/valor-x/hexo-theme-solitude || sco-github-line
-      Telegram: https://t.me/efuome || sco-telegram-line
+      Github: https://github.com/valor-x/hexo-theme-solitude || st-github-line
+      Telegram: https://t.me/efuome || st-telegram-line
 
   flip:
     favicon: "https://7.isyangs.cn/34/65ed42f5598a8-34.png"
     face: "https://7.isyangs.cn/34/65ed430337020-34.png"
     backface: "https://7.isyangs.cn/34/65ed431894af3-34.png"
-    backcolor: "var(--sco-blue)"
+    backcolor: "var(--efu-blue)"
 
   toc:
     post: true
@@ -208,11 +208,11 @@ related_post:
 footer:
   information:
     left:
-      Github: https://github.com/efuo || sco-github-line
-      Mail: mailto:o@efu.me || sco-mail-line
+      Github: https://github.com/efuo || st-github-line
+      Mail: mailto:o@efu.me || st-mail-line
     right:
-      Bilibili: https://space.bilibili.com/1329819902 || sco-bilibili-line
-      抖音: https://v.douyin.com/iJsLc8jt/ || sco-douyin-fill
+      Bilibili: https://space.bilibili.com/1329819902 || st-bilibili-line
+      抖音: https://v.douyin.com/iJsLc8jt/ || st-douyin-fill
 
   group:
     导航:
