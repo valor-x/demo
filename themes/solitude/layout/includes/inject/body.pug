@@ -1,0 +1,153 @@
+- page.type = is_post() ? 'post' : page.type
+
+mixin katex
+    if theme.katex.copytex
+        script(src=url_for(theme.cdn.katex_copytex))
+            script.
+                (() => {
+                    document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+                        utils.wrap(item, 'div', {class: 'katex-wrap'})
+                    })
+                })();
+
+div
+    script(src=url_for(theme.cdn.main))
+    script(src=url_for(theme.cdn.utils))
+
+    if theme.mermaid
+        script(src=url_for(theme.cdn.mermaid_js))
+
+    if theme.album.enable
+        script(src=url_for(theme.cdn.macy_js))
+
+    if theme.rightside.enable
+        include ../widgets/rightside/index
+        script(src=url_for(theme.cdn.rightside_js))
+
+    if theme.display_mode.universe
+        script(src=url_for(theme.cdn.universe_js))
+        script.
+            dark()
+
+    if theme.translate.enable
+        script(src=url_for(theme.cdn.translate))
+
+    if theme.katex && theme.katex.enable
+        if theme.katex.per_page && (is_post() || is_page())
+            +katex
+        else if page.katex
+            +katex
+
+    script(src=url_for(theme.cdn.pjax))
+    if theme.lazyload.enable
+        script(src=url_for(theme.cdn.lazyload))
+    script(src=url_for(theme.cdn.snackbar))
+    if theme.lightbox
+        if theme.mediumZoom
+            script(src=url_for(theme.cdn.medium_zoom))
+        if theme.fancybox
+            script(src=url_for(theme.cdn.fancyapps_ui))
+    if theme.says.home_mini
+        script(src=url_for(theme.cdn.swiper_js))
+
+    if theme.post_ai.enable
+        script(src=url_for(theme.cdn.sco_ai_js))
+
+    if theme.capsule.enable || theme.music.enable
+        script(src=url_for(theme.cdn.aplayer_js))
+        script(src=url_for(theme.cdn.meting_js))
+        script.
+            const meting_api = '!{theme.meting_api}';
+
+    if theme.post.covercolor.enable
+        case theme.post.covercolor.mode
+            when 'local'
+                script(src=url_for(theme.cdn.cover_local))
+            when 'api'
+                script.
+                    const coverColorConfig = {
+                        api: '!{theme.post.covercolor.api}',
+                        time: !{theme.post.covercolor.time},
+                    }
+                script(src=url_for(theme.cdn.cover_api))
+
+    if theme.says.enable
+        script(src=url_for(theme.cdn.waterfall))
+
+    if theme.comment.enable
+        case theme.comment.type
+            when 'twikoo'
+                script(src=url_for(theme.cdn.twikoo))
+            when 'waline'
+                script(src=url_for(theme.cdn.waline_js))
+        if theme.comment.commentBarrage
+            case theme.comment.type
+                when 'twikoo'
+                    script(src=url_for(theme.cdn.twikoo_commentBarrage))
+                when 'waline'
+                    script(src=url_for(theme.cdn.waline_commentBarrage))
+
+    if theme.music.enable
+        script(src=url_for(theme.cdn.music_js))
+
+    if theme.loading.pace
+        script(src=url_for(theme.cdn.pace_js))
+
+    if theme.search.enable
+        case theme.search.type
+            when 'algolia'
+                script(src=url_for(theme.cdn.instantsearch))
+                script(src=url_for(theme.cdn.algolia_search))
+            when 'local'
+                script(src=url_for(theme.cdn.lunr_js))
+
+    if theme.extends.body
+        each item in theme.extends.body
+            != item
+
+div#js-pjax
+    if theme.mermaid
+        script.
+            mermaid.run();
+    if page.type === 'album' && theme.album.enable
+        script.
+            initGallery()
+    if is_home() && theme.says.home_mini
+        script.
+            sco.initbbtalk();
+    if page.type === 'says' && theme.says.enable
+        script.
+            window.addEventListener('resize', utils.throttle(function () {
+                if (document.getElementById('waterfall')) {
+                    sco.reflashEssayWaterFall();
+                }
+            }), 500);
+            sco.reflashEssayWaterFall();
+            GLOBAL_CONFIG.lightbox && utils.lightbox(document.querySelectorAll(".bber-content-img img"));
+    if theme.busuanzi && (theme.aside.siteinfo.uv || theme.aside.siteinfo.pv)
+        script(async src=url_for(theme.cdn.busuanzi_js))
+
+    script#config-diff.
+        var PAGE_CONFIG = {
+            is_post: !{is_post()},
+            is_page: !{is_page()},
+            is_home: !{is_home()},
+            page: '!{page.type}',
+            toc: !{!!page.toc},
+            comment: !{!!page.comment},
+        }
+
+if theme.footer.randomlink
+    include ../widgets/randomlink.pug
+
+// newest comment
+include ../widgets/third-party/news-comment/newest-comment.pug
+
+// pjax
+include ../widgets/third-party/pjax.pug
+
+// theme
+include ../body/mode
+
+// google adsense
+include ../body/gadsense

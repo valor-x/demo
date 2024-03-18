@@ -1,0 +1,148 @@
+# Language: 简体中文
+theme:
+  dark: 已切换至深色模式
+  light: 已切换至浅色模式
+
+copy:
+  success: 复制成功
+  error: 复制失败
+
+time:
+  recent: 最近
+  yesterday: 昨天
+  berforeyesterday: 前天
+  daybefore: 天前
+  runtime:  天
+
+chs:
+  chs_tw: 繁體中文
+  chs_cn: 简体中文
+
+page:
+  tag: 标签
+  category: 分类
+  tags: 全部标签
+  categories: 全部分类
+  archives: 文章
+  404: 页面没有找到
+
+nav:
+  site_name_title: 返回博客主页
+  backtop: 返回顶部
+  travellings: 开往-友链接力
+  search: 搜索
+  randompost: 随机一篇文章
+  console: 中控台
+
+home:
+  categoryBar:
+    home: 首页
+    more: 更多
+  recent-post:
+    sticky: 置顶
+    new: 最新
+    read: 未读
+  top-group:
+    recommend: 荐
+    recommendmore: 更多推荐
+
+post:
+  meta_reprint: 转载或翻译
+  meta_original: 原创
+  meta_cc: 该文章为${cc}文章，注意版权协议
+  meta_posted: 发布于
+  meta_updated: 最后更新于
+  meta_wordcount: 文章字数
+  meta_minread: 阅读耗时
+  meta_ip: 作者IP归属地为
+  meta_pv: 文章热度
+  meta_comment: 评论数
+
+award:
+  wechat: 微信
+  alipay: 支付宝
+  about:
+    tip: 致谢
+    tip1: 赞赏作者
+    tip2: 感谢你赐予我前进的力量
+    title: 赞赏名单
+
+search:
+  empty: 找不到你查询的内容：${query}
+  hit: 找到 ${hits} 条结果，用时 ${time} 毫秒
+  placeholder: 输入关键词快速查找
+
+head:
+  noscript: 开启JavaScript才能访问本站哦~
+
+aside:
+  postcount: '文章总数 :'
+  pv: '总访问数 :'
+  uv: '总访客数 :'
+  runtime: '建站天数 :'
+  updatetime: '最后更新 :'
+  wordcount: '全站字数 :'
+  toc: 文章目录
+  tagmore: 查看全部
+  avatar: 头像
+  sticker: 心情贴纸
+  newpost: 最近发布
+
+console:
+  comment_tip: 互动
+  comment_title: 最新评论
+  tag_tip: 标签
+  tag_title: 寻找感兴趣的领域
+  switch_darkmode: 昼夜切换
+  switch_hideAside: 边栏显示控制
+  switch_keyboard: 键盘快捷键
+  switch_music: 音乐开关
+  archive_unit: 篇
+
+sidebar:
+  title1: 功能
+  title2: 标签
+  darkmode: 显示模式
+
+footer:
+  description: 来自${title}的文章
+  learnmore: 了解更多
+  randomlink: 友链
+  rss: 订阅
+  theme: 主题
+
+cookies:
+  title: 协议提醒助手
+  tip: 查看本站为你的个人隐私做出的努力
+  privacy: 本站如何保护你的隐私
+
+music:
+  hit: 音乐已暂停
+
+rightmenu:
+  copytext: 复制选中文本
+  pastetext: 粘贴文本
+  commenttext: 引用到评论
+  newwindow: 新窗口打开
+  copylink: 复制链接地址
+  copyimg: 复制此图片
+  downloadimg: 下载此图片
+  search: 站内搜索
+  music:
+    toggle: 播放音乐
+    back: 切换到上一首
+    forward: 切换到下一首
+    playlist: 查看所有歌曲
+    copyMusicName: 复制歌名
+  randomPost: 随便逛逛
+  categories: 文章分类
+  tags: 文章标签
+  copyaddress: 复制地址
+  commentBarrage: 关闭热评
+  dark: 深色模式
+  light: 浅色模式
+  chs_to_cht: 轉為繁體
+  cht_to_chs: 转为简体
+
+404:
+  button: 返回首页

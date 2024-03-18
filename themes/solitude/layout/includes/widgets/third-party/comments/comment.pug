@@ -1,0 +1,17 @@
+#post-comment
+    .comment-head
+        .comment-headline
+            i.solitude.st-chat-fill
+            span  评论
+            span
+        .comment-randomInfo
+            a(onclick="sco.addRandomCommentInfo()", href="javascript:void(0)") 匿名评论
+        .comment-tips#comment-tips
+            span ✅ 你无需删除空行，直接评论以获取最佳展示效果
+    .comment-wrap
+        #comment
+        case theme.comment.type
+            when 'twikoo'
+                include ./twikoo.pug
+            when 'waline'
+                include ./waline.pug

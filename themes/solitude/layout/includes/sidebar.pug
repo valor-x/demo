@@ -1,0 +1,16 @@
+div#sidebar(style="zoom: 1;")
+    div#menu-mask(style="display: none;")
+    div#sidebar-menus
+        span.sidebar-menu-item-title= __('sidebar.title1')
+        div.sidebar-menu-item
+            a.darkmode_switchbutton.menu-child(onclick="sco.switchDarkMode()", href="javascript:void(0);")
+                i.solitude.st-moon-clear-fill
+                span= __('sidebar.darkmode')
+        include ./widgets/nav/group
+        include ./widgets/nav/menu.pug
+        span.sidebar-menu-item-title= __('sidebar.title2')
+        div.card-widget.card-tags.card-archives.card-webinfo.card-allinfo
+            div.card-tag-cloud
+                each tag in site.tags.find({ parent: { $exists: false } }).data
+                    a(href=url_for(tag.path))= tag.name
+                        sup= tag.length

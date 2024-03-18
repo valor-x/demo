@@ -20,78 +20,6 @@ comment: false
 
 {% endnote %}
 
-## 卡片 card
-
-{% tabs card %}
-
-<!-- tab 标签语法 -->
-
-```markdown
-{% card icon,color,title %}
-content
-{% endcard %}
-```
-
-<!-- endtab -->
-
-<!-- tab 配置参数 -->
-
-| 参数    | 含义                                |
-|-------|-----------------------------------|
-| color | red,green,blue,yellow,purple,cyan |
-| icon  | 图标, no-icon                       |
-| title | 标题                                |
-
-<!-- endtab -->
-
-<!-- tab 样式预览 -->
-
-{% card no-icon,green,title %}
-
-lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium ad adipisci alias
-
-{% endcard %}
-
-{% card sco-circle-check-solid,green,title %}
-
-lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium ad adipisci alias
-
-{% endcard %}
-
-{% card sco-circle-exclamation-solid,red,title %}
-
-lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium ad adipisci alias
-
-{% endcard %}
-
-<!-- endtab -->
-
-<!-- tab 演示源码 -->
-
-```markdown
-{% card no-icon,green,title %}
-
-lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium ad adipisci alias
-
-{% endcard %}
-
-{% card sco-circle-check-solid,green,title %}
-
-lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium ad adipisci alias
-
-{% endcard %}
-
-{% card sco-circle-exclamation-solid,red,title %}
-
-lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium ad adipisci alias
-
-{% endcard %}
-```
-
-<!-- endtab -->
-
-{% endtabs %}
-
 ## 按钮 btn
 
 {% tabs btn %}
@@ -137,40 +65,46 @@ larger/留空
 
 > 一组按钮
 
-This is my website, click the button {% btn 'https://blog.wzsco.top/',Solitude %}
-This is my website, click the button {% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold %}
-This is my website, click the button {% btn 'https://blog.wzsco.top/',Solitude,,outline %}
-This is my website, click the button {% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,outline %}
-This is my website, click the button {% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,larger %}
+This is my website, click the btn {% btn 'https://efu.me/',Efu %}
+
+This is my website, click the btn {% btn 'https://efu.me/',Efu,st-lightbulb-line %}
+
+This is my website, click the btn {% btn 'https://efu.me/',Efu,,outline %}
+
+This is my website, click the btn {% btn 'https://efu.me/',Efu,st-lightbulb-line,outline %}
+
+This is my website, click the btn {% btn 'https://efu.me/',Efu,st-lightbulb-line,larger %}
 
 > 调整位置或大小
 
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,block %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,block center larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,block right larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,block %}
 
-> more than one button in center
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,block center larger %}
+
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,block right larger %}
+
+> more than one btn in center
 
 <span>
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,bg-blue larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,bg-pink larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,bg-red larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,bg-purple larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,bg-orange larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,bg-green larger %}
+{% btn 'https://efu.me/',Efu, st-lightbulb-line,larger %}
+{% btn 'https://efu.me/',Efu, st-lightbulb-line,bg-blue larger %}
+{% btn 'https://efu.me/',Efu, st-lightbulb-line,bg-pink larger %}
+{% btn 'https://efu.me/',Efu, st-lightbulb-line,bg-red larger %}
+{% btn 'https://efu.me/',Efu, st-lightbulb-line,bg-purple larger %}
+{% btn 'https://efu.me/',Efu, st-lightbulb-line,bg-orange larger %}
+{% btn 'https://efu.me/',Efu, st-lightbulb-line,bg-green larger %}
 </span>
 
 > 居中按钮
 
-<div class="btn-center">
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,outline larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,outline blue larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,outline pink larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,outline red larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,outline purple larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,outline orange larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,outline green larger %}
+<div align="center">
+{% btn 'https://efu.me/',Efu, st-lightbulb-line,outline larger %}
+{% btn 'https://efu.me/',Efu, st-lightbulb-line,outline blue larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,pink larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,red larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,purple larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,orange larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,green larger %}
 </div>
 
 <!-- endtab -->
@@ -180,40 +114,40 @@ This is my website, click the button {% btn 'https://blog.wzsco.top/',Solitude,s
 ```markdown
 > 一组按钮
 
-This is my website, click the button {% btn 'https://blog.wzsco.top/',Solitude %}
-This is my website, click the button {% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold %}
-This is my website, click the button {% btn 'https://blog.wzsco.top/',Solitude,,outline %}
-This is my website, click the button {% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,outline %}
-This is my website, click the button {% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,larger %}
+This is my website, click the btn {% btn 'https://efu.me/',Efu %}
+This is my website, click the btn {% btn 'https://efu.me/',Efu,st-lightbulb-line %}
+This is my website, click the btn {% btn 'https://efu.me/',Efu,,outline %}
+This is my website, click the btn {% btn 'https://efu.me/',Solitude,st-lightbulb-line,outline %}
+This is my website, click the btn {% btn 'https://efu.me/',Solitude,st-lightbulb-line,larger %}
 
 > 调整位置或大小
 
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,block %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,block center larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,block right outline larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,block %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,block center larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,block right outline larger %}
 
-> more than one button in center
+> more than one btn in center
 
 <span>
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,blue larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,pink larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,red larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,purple larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,orange larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,green larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,blue larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,pink larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,red larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,purple larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,orange larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,green larger %}
 </span>
 
 > 居中按钮
 
 <div class="btn-center">
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,outline larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,outline blue larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,outline pink larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,outline red larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,outline purple larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,outline orange larger %}
-{% btn 'https://blog.wzsco.top/',Solitude,scoicon sco-arrow-right-bold,outline green larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,outline larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,outline blue larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,outline pink larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,outline red larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,outline purple larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,outline orange larger %}
+{% btn 'https://efu.me/',Efu,st-lightbulb-line,outline green larger %}
 </div>
 ```
 
@@ -338,61 +272,16 @@ This is my website, click the button {% btn 'https://blog.wzsco.top/',Solitude,s
 
 <!-- tab 样式预览 -->
 
-{% label text red %}
+臣亮言：{% label 先帝 %}创业未半，而{% label 中道崩殂 blue %}。今天下三分，{% label 益州疲敝 pink %}，此诚{% label 危急存亡之秋 red %}也！然侍衞之臣，不懈于内；{% label 忠志之士 purple %}，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。
+宫中、府中，俱为一体；陟罚臧否，不宜异同。若有{% label 作奸 orange %}、{% label 犯科 green %}，及为忠善者，宜付有司，论其刑赏，以昭陛下平明之治；不宜偏私，使内外异法也。
 
 <!-- endtab -->
 
 <!-- tab 演示源码 -->
 
 ```markdown
-{% label text red %}
-```
-
-<!-- endtab -->
-
-{% endtabs %}
-
-## 单选列表 radio
-
-{% tabs radio %}
-
-<!-- tab 标签语法 -->
-
-```markdown
-{% radio 样式参数（可选）, 文本（支持简单md） %}
-```
-
-<!-- endtab -->
-
-<!-- tab 配置参数 -->
-
-1. 颜色: red,yellow,green,cyan,blue,gray
-2. 选中状态: checked
-
-<!-- endtab -->
-
-<!-- tab 样式预览 -->
-
-{% radio 纯文本测试 %}
-{% radio checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
-{% radio red, 支持自定义颜色 %}
-{% radio green, 绿色 %}
-{% radio yellow, 黄色 %}
-{% radio cyan, 青色 %}
-{% radio blue, 蓝色 %}
-
-<!-- endtab -->
-
-<!-- tab 演示源码 -->
-
-```markdown
-{% radio 纯文本测试 %}
-{% radio checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
-{% radio red, 支持自定义颜色 %}
-{% radio green, 绿色 %}
-{% radio yellow, 黄色 %}
-{% radio cyan, 青色 %}
-{% radio blue, 蓝色 %}
+臣亮言：{% label 先帝 %}创业未半，而{% label 中道崩殂 blue %}。今天下三分，{% label 益州疲敝 pink %}，此诚{% label 危急存亡之秋 red %}也！然侍衞之臣，不懈于内；{% label 忠志之士 purple %}，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。
+宫中、府中，俱为一体；陟罚臧否，不宜异同。若有{% label 作奸 orange %}、{% label 犯科 green %}，及为忠善者，宜付有司，论其刑赏，以昭陛下平明之治；不宜偏私，使内外异法也。
 ```
 
 <!-- endtab -->
@@ -413,7 +302,7 @@ This is my website, click the button {% btn 'https://blog.wzsco.top/',Solitude,s
 
 <!-- tab 样式预览 -->
 
-{% audio 音频链接 %}
+{% audio https://npm.elemecdn.com/anzhiyu-music@1.0.4/%E9%9D%92%E8%8A%B1%E7%93%B7/%E9%9D%92%E8%8A%B1%E7%93%B7.mp3 %}
 
 <!-- endtab -->
 
@@ -450,19 +339,46 @@ This is my website, click the button {% btn 'https://blog.wzsco.top/',Solitude,s
 
 > 默认
 
-{% video 视频链接 %}
+![](https://7.isyangs.cn/34/65f7f0ae6af48-34.png)
+
+> 50% 宽度
+
+![](https://7.isyangs.cn/34/65f7f15b0341c-34.png)
+
+> 25 %
+
+![](https://7.isyangs.cn/34/65f7f12ebef8c-34.png)
 
 <!-- endtab -->
 
 <!-- tab 演示源码 -->
 
 ```markdown
-
 > 默认
 
-{% video 视频链接 %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 
+> 50% 宽度
 
+{% videos, 2 %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% endvideos %}
+
+> 25 %
+
+{% videos, 4 %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% endvideos %}
 ```
 
 <!-- endtab -->
@@ -1137,36 +1053,197 @@ Demo 2 - title + open
 
 {% endtabs %}
 
-## bilibili 视频播放
+## bvideo 视频播放
 
-{% tabs bilibili视频播放 %}
+{% tabs bvideo视频播放 %}
 
 <!-- tab 标签语法 -->
 
 ```markdown
-{% bilibili [id] [time] %}
+{% bvideo [id] [time] %}
 ```
 
 <!-- endtab -->
 
 <!-- tab 配置参数 -->
 
-| 参数  | 含义                                                                                              |
-|-----|-------------------------------------------------------------------------------------------------|
-| url | 视频嵌入链接（例如：//player.bilibili.com/player.html?aid=450061422&bvid=BV1nj411i7Ja&cid=1310680043&p=1） |
+| 参数  | 含义                          |
+|-----|-----------------------------|
+| url | bvid（例如视频链接后的：BV1nj411i7Ja） |
 
 <!-- endtab -->
 
 <!-- tab 演示预览 -->
 
-{% bilibili //player.bilibili.com/player.html?aid=450061422&bvid=BV1nj411i7Ja&cid=1310680043&p=1 %}
+{% bvideo BV1nj411i7Ja %}
 
 <!-- endtab -->
 
 <!-- tab 演示源码 -->
 
 ```markdown
-{% bilibili //player.bilibili.com/player.html?aid=450061422&bvid=BV1nj411i7Ja&cid=1310680043&p=1 %}
+{% bvideo BV1nj411i7Ja %}
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+## 复选列表 checkbox
+
+{% tabs checkbox %}
+<!-- tab 标签语法 -->
+
+```markdown
+{% checkbox 样式参数（可选）, 文本内容 %}
+```
+
+<!-- endtab -->
+
+<!-- tab 配置参数 -->
+
+1. 样式: plus, minus, times
+2. 颜色: red,yellow,green,cyan,blue,gray
+3. 选中状态: checked
+
+<!-- endtab -->
+
+<!-- tab 演示预览 -->
+
+{% checkbox 纯文本测试 %}
+{% checkbox checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% checkbox red, 支持自定义颜色 %}
+{% checkbox green checked, 绿色 + 默认选中 %}
+{% checkbox yellow checked, 黄色 + 默认选中 %}
+{% checkbox cyan checked, 青色 + 默认选中 %}
+{% checkbox blue checked, 蓝色 + 默认选中 %}
+{% checkbox plus green checked, 增加 %}
+{% checkbox minus yellow checked, 减少 %}
+{% checkbox times red checked, 叉 %}
+
+<!-- endtab -->
+
+<!-- tab 演示源码 -->
+
+```markdown
+{% checkbox 纯文本测试 %}
+{% checkbox checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% checkbox red, 支持自定义颜色 %}
+{% checkbox green checked, 绿色 + 默认选中 %}
+{% checkbox yellow checked, 黄色 + 默认选中 %}
+{% checkbox cyan checked, 青色 + 默认选中 %}
+{% checkbox blue checked, 蓝色 + 默认选中 %}
+{% checkbox plus green checked, 增加 %}
+{% checkbox minus yellow checked, 减少 %}
+{% checkbox times red checked, 叉 %}
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+## mermaid 图
+
+{% note info simple %}
+
+使用`mermaid标签`可以绘制Flowchart（流程图）、Sequence diagram（时序图 ）、Class Diagram（类别图）、State Diagram（状态图）、Gantt（甘特图）和Pie Chart（圆形图），具体可以查看[mermaid文档](https://mermaid.js.org/#/)
+
+{% endnote %}
+
+{% note danger simple %}
+
+如果使用了 gulp 一定要关闭使用过 mermaid 的页面，具体看[文档详情](https://solitude-docs.efu.me/high-configuration/advanced#gulp)
+
+{% endnote %}
+
+* 打开主题配置文件中的开关
+
+```yaml
+mermaid: true
+```
+
+{% tabs mermaid图 %}
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% mermaid %}
+graph TD:
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+{% endmermaid %}
+```
+
+<!-- endtab -->
+
+<!-- tab 演示预览 -->
+
+![](https://7.isyangs.cn/34/65f7fd27eb75e-34.png)
+
+<!-- endtab -->
+
+<!-- tab 演示源码 -->
+
+```markdown
+{% mermaid %}
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+{% endmermaid %}
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+## gallery 图库
+
+{% tabs 图库 %}
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% gallery 图库 图库简介 链接 图片 %}
+```
+
+<!-- endtab -->
+
+<!-- tab 演示预览 -->
+
+> 相册
+
+<div style="display: flex; justify-content: center;gap: 10px">
+
+{% galleryGroup 图库 图库简介 链接 https://7.isyangs.cn/34/65ed523eec48d-34.jpeg %}
+{% galleryGroup 图库 图库简介 链接 https://7.isyangs.cn/34/65ed523eec48d-34.jpeg %}
+
+</div>
+
+<div style="display: flex; justify-content: center;gap: 10px">
+
+{% galleryGroup 图库 图库简介 链接 https://7.isyangs.cn/34/65ed523eec48d-34.jpeg %}
+{% galleryGroup 图库 图库简介 链接 https://7.isyangs.cn/34/65ed523eec48d-34.jpeg %}
+
+</div>
+
+> 相册内容页
+
+<!-- endtab -->
+
+<!-- tab 演示源码 -->
+
+```markdown
+{% mermaid %}
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+{% endmermaid %}
 ```
 
 <!-- endtab -->

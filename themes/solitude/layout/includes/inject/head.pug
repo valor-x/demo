@@ -1,0 +1,88 @@
+each item in theme.verify_site || []
+    meta(name=item.name, content=item.content)
+
+link(rel="stylesheet", href=url_for(theme.cdn.solitude_css))
+link(rel="stylesheet", href=url_for(theme.cdn.snackbar_css))
+
+// aplayer
+if theme.capsule.enable || theme.music.enable
+    link(rel="stylesheet", href=url_for(theme.cdn.aplayer_css))
+
+// swiper
+if theme.says.home_mini
+    link(rel="stylesheet", href=url_for(theme.cdn.swiper_css))
+
+if theme.lightbox && theme.fancybox
+    link(rel="stylesheet", href=url_for(theme.cdn.fancyapps_css))
+
+if theme.katex && theme.katex.enable
+    link(rel="stylesheet", href=url_for(theme.cdn.katex))
+
+// Open Graph
+include ../head/opengraph.pug
+
+// pwa
+if theme.pwa.enable
+    include ../head/pwa.pug
+
+script.
+    (win => {
+            win.saveToLocal = {
+                set: function setWithExpiry(key, value, ttl) {
+                    if (ttl === 0)
+                        return
+                    const now = new Date()
+                    const expiryDay = ttl * 86400000
+                    const item = {
+                        value: value,
+                        expiry: now.getTime() + expiryDay,
+                    }
+                    localStorage.setItem(key, JSON.stringify(item))
+                },
+
+                get: function getWithExpiry(key) {
+                    const itemStr = localStorage.getItem(key)
+
+                    if (!itemStr) {
+                        return undefined
+                    }
+                    const item = JSON.parse(itemStr)
+                    const now = new Date()
+
+                    if (now.getTime() > item.expiry) {
+                        localStorage.removeItem(key)
+                        return undefined
+                    }
+                    return item.value
+                }
+            }
+
+            const DarkModeStatus = localStorage.getItem('theme')
+            if (DarkModeStatus !== null) {
+                if (DarkModeStatus === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark')
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'light')
+                }
+            }
+
+            const asideStatus = saveToLocal.get('aside-status')
+            if (asideStatus !== undefined) {
+                if (asideStatus === 'hide') {
+                    document.documentElement.classList.add('hide-aside')
+                } else {
+                    document.documentElement.classList.remove('hide-aside')
+                }
+            }
+        }
+    )(window)
+
+    console.log(
+        "%c Program: Hexo %c Theme: Solitude %c Version: v1.5.4",
+        "border-radius:5px 0 0 5px;padding: 5px 10px;color:white;background:#ff3842;",
+        "padding: 5px 10px;color:white;background:#3e9f50;",
+        "border-radius:0 5px 5px 0;padding: 5px 10px;background:#0084ff;color:white;"
+    );
+if theme.extends.head
+    each item in theme.extends.head
+        != item

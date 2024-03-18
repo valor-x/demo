@@ -362,7 +362,9 @@ comment:
     lang: "zh-CN" # 语言
     accessToken: # accessToken
 
-
+# mermaid
+# https://mermaid.js.org/
+mermaid: true
 
 verify_site:
 #  - name: google-site-verification
@@ -370,7 +372,7 @@ verify_site:
 #  - name: baidu-site-verification
 #    content: xxxxxxx
 
-css_prefix: true
+css_prefix: false
 
 extends:
   head: 
@@ -387,7 +389,7 @@ pwa:
   favicon_16_16: /img/pwa/16.png 
 
 CDN:
-  internal: cdnjs
+  internal: local
   third_party: cdnjs
   version: true
   custom_format: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}

@@ -1,0 +1,16 @@
+- const { envId, option } = theme.comment.waline
+
+script.
+    async function initComment() {
+        Waline.init(Object.assign({
+            el: '#comment',
+            serverURL: '!{envId}',
+            pageview: !{theme.post.meta.pv},
+            dark: 'html[data-theme="dark"]',
+            path: window.location.pathname,
+            search: false,
+            comment: #{theme.post.meta.comment && is_post()},
+        }, !{JSON.stringify(option)}))
+
+        GLOBAL_CONFIG.lightbox && utils.lightbox(document.querySelectorAll('#comment .wl-content img:not(.wl-emoji)'))
+    }

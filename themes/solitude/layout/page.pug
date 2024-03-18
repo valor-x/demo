@@ -1,0 +1,33 @@
+extends includes/layout.pug
+
+block content
+    main.layout#content-inner(class=page.aside ? '' : 'hide-aside')
+        #page
+            case page.type
+                when 'categories'
+                    include includes/page/categories
+                when 'tags'
+                    include includes/page/tags
+                when 'links'
+                    include includes/page/links
+                when 'tlink'
+                    include includes/page/tlink
+                when 'about'
+                    include includes/page/about
+                when 'says'
+                    include includes/page/says
+                when 'equipment'
+                    include includes/page/equipment
+                when 'moment'
+                    include includes/page/moment
+                when 'douban'
+                    include includes/widgets/page/banner
+                    include includes/page/default
+                when 'music'
+                    include includes/page/music
+                default
+                    include includes/page/default
+            if page.comment
+                include includes/widgets/third-party/comments/comment
+        if page.aside
+            include includes/widgets/aside/aside

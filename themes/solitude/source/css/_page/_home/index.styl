@@ -1,0 +1,20 @@
+#home_top
+  max-width 1400px
+  margin .5rem auto auto
+  padding 0 1.5rem
+
+  +maxWidth768()
+    padding 0
+    margin-top 0
+
+if hexo-config('hometop.enable')
+  @import "home-top.styl"
+
+// 分类导航栏
+@import "category-bar.styl"
+
+// 首页文章列表
+@import "recent-post.styl"
+
+// 分页
+@import "pagination.styl"

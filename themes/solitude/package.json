@@ -1,0 +1,32 @@
+{
+  "name": "hexo-theme-solitude",
+  "version": "1.5.4",
+  "description": "A beautiful, powerful, and efficient Hexo theme developed by the wleelw",
+  "main": "package.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "solitude",
+    "Card UI Design",
+    "Efu",
+    "hexo-theme-solitude"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valor-x/hexo-theme-solitude.git"
+  },
+  "dependencies": {
+    "hexo-renderer-stylus": "^3.0.0",
+    "hexo-renderer-pug": "^3.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/valor-x/hexo-theme-solitude/issues",
+    "email": "o@efu.me"
+  },
+  "homepage": "https://solitude-demo.efu.me/",
+  "author": "Hexo-Theme-Solitude<o@efu.me>",
+  "license": "MIT"
+}
