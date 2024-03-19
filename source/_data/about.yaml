@@ -133,22 +133,42 @@ cause:
 award:
   enable: true
   description: 感谢赞赏的人，因为你们，让我感受到写博客这件事情能够给你们创造了价值。这会让我在这条路上走得更远。
-  tips: 总金额：¥ {sum}，将全部用于博客的维护和更新。 # 必须带 {sum}，否则无法显示总金额
+  tips: 总金额：¥{sum}，将全部用于博客的维护和更新。 # 必须带 {sum}，否则无法显示总金额
 rewardList:	# 底部捐赠
   - name: 悦华
     money: 5
     time: 2023-04-20
+    icon: st-alipay-fill
   - name: 糕小菜
     money: 6.66
     time: 2023-08-11
     vip: true
+    icon: st-wechat-fill
   - name: 幕幕
     money: 5
     time: 2023-08-11
+    icon: st-wechat-fill
   - name: 悦华
     money: 56
     vip: true
     time: 2023-08-25
+    icon: st-alipay-fill
   - name: 糕小菜
     money: 3.33
     time: 2023-12-24
+    icon: st-wechat-fill
+  - name: 凉城.
+    money: 6.66
+    vip: true
+    time: 2024-02-02
+    icon: st-wechat-fill
+  - name: 理随
+    money: 6.66
+    vip: true
+    time: 2024-02-02
+    icon: st-qq-fill
+  - name: btwoa
+    money: 30
+    time: 2024-02-04
+    icon: st-wechat-fill
+    vip: true
