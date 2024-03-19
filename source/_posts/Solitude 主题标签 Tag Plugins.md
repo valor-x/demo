@@ -949,7 +949,7 @@ est excepturi facere molestias nam, omnis perspiciatis quas, repellendus sit. Ip
 <!-- tab 标签语法 -->
 
 ```markdown
-{% link [title] [subtitle] [link] %}
+{% link [title],[subtitle],[link] %}
 ```
 
 <!-- endtab -->
@@ -965,18 +965,20 @@ est excepturi facere molestias nam, omnis perspiciatis quas, repellendus sit. Ip
 <!-- endtab -->
 
 <!-- tab 样式预览 -->
-{% link Solitude 官方文档地址 https://docs.wzsco.top/ %}
+{% link Solitude,官方文档地址,https://solitude-docs.efu.me/ %}
 
-{% link 知乎 有问题，就会有答案 https://www.zhihu.com/ %}
+{% link 知乎,有问题，就会有答案,https://www.zhihu.com/ %}
+
+{% link Efu,作者博客,https://efu.me/ %}
 
 <!-- endtab -->
 
 <!-- tab 演示源码 -->
 
 ```markdown
-{% link Solitude 官方文档地址 https://docs.wzsco.top/ %}
+{% link Solitude,官方文档地址,https://solitude-docs.efu.me/ %}
 
-{% link 知乎 有问题，就会有答案 https://www.zhihu.com/ %}
+{% link 知乎,有问题，就会有答案,https://www.zhihu.com/ %}
 ```
 
 <!-- endtab -->
