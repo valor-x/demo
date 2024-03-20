@@ -248,7 +248,7 @@ says:
 meting_api: "https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r"
 music:
   enable: true
-  id: 7423482819
+  id: 2312165875
   server: netease
   type: playlist
   volume: 0.8
