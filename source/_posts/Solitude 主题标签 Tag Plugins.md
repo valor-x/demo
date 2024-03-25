@@ -11,7 +11,7 @@ tags:
   - [ 精选 ]
 cover: https://7.isyangs.cn/34/65ed44d710c5f-34.png
 sticky: 1
-comment: false
+comment: true
 ---
 
 {% note simple primary %}

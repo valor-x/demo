@@ -2,13 +2,13 @@ site:
   name:
     class: text
     custom: Solitude
-  siteIcon: /img/favicon.png
-  icon: https://7.isyangs.cn/34/65ed3a36ab0e5-34.jpg
+  siteIcon: /img/pwa/favicon.ico
+  icon: /img/avatar.png
 
 nav:
   group:
     项目:
-      Solitude: https://github.com/valor-x/hexo-theme-solitude || https://7.isyangs.cn/34/65ed3a36ab0e5-34.jpg
+      Solitude: https://github.com/valor-x/hexo-theme-solitude || /img/pwa/favicon_32.ico
 
   menu:
     文库:
@@ -57,9 +57,6 @@ hometop:
       Docker:
         img: https://7.isyangs.cn/34/65ed41f609691-34.png
         color: "#57b6e6"
-      Flutter:
-        img: https://7.isyangs.cn/34/65ed4201c2532-34.png
-        color: "#ffffff"
       WebPack:
         img: https://7.isyangs.cn/34/65ed420f30a30-34.png
         color: "#2e3a41"
@@ -76,22 +73,22 @@ hometop:
     title: 前往文档
     url: https://solitude-docs.efu.me
     img: /img/default.png
-    color: "none"
+    color: "#4FA5CE"
 
 aside:
   home:
-    noSticky: "about,flip"
+    noSticky: "about"
     Sticky: "allInfo"
   post:
-    noSticky: "about,flip"
+    noSticky: "about"
     Sticky: "newestPost"
   page:
-    noSticky: "about,flip"
+    noSticky: "about"
     Sticky: "newestPost,allInfo"
   card:
     author:
-      img: https://7.isyangs.cn/34/65ed3a36ab0e5-34.jpg
-      sticker: https://7.isyangs.cn/34/65ed3a8bdf1ae-34.png
+      img: /img/avatar.png
+      sticker: /img/happy-sticker.png
     url: https://efu.me/
     content: 分享自己对编程的<b>热爱</b>，对美好生活的<b>向往</b>，对知识海洋<b>探索历程</b>。
     content2: 相信你可以在这里找到对你有用的知识和教程。
@@ -187,14 +184,14 @@ post:
     time: 43200000
 
 theme_color:
-  dark: "#ffc848"
-  dark_op: "#f2b94b23"
-  dark_op_deep: "#f2b94bdd"
-  dark_none: "#f2b94b00"
-  light: "#425AEF"
-  light_op: "#4259ef23"
-  light_op_deep: "#4259efdd"
-  light_none: "#4259ef01"
+  dark: "#FDA827"
+  dark_op: "#FDA82723"
+  dark_op_deep:  "#FDA827dd"
+  dark_none:  "#FDA82700"
+  light: "#4FA5D6"
+  light_op: "#4FA5D623"
+  light_op_deep: "#4FA5D6dd"
+  light_none: "#4FA5D600"
 
 display_mode:
   type: auto
@@ -310,8 +307,8 @@ opengraph:
   enable: true
   options:
     twitter_card: summary_large_image
-    twitter_image: /img/favicon.png
-    twitter_id: Efuo
+    twitter_image: /img/pwa/favicon.ico
+    twitter_id: Efu
     twitter_site: Solitude
 
 wordcount: true
@@ -331,7 +328,7 @@ post_ai:
   enable: true
   modelName: GPT 4
   key: Qi7QIXLOrxLCyKBW0bie
-  talk: 我是 Efuo 开发的摘要生成助理ScoGPT，ScoGPT在静态部署时进行摘要的撰写，并且在访客访问时通过ScoCorrection转译后的文本摘要实现工具。我在这里只负责已经生成的摘要显示，你无法与我直接沟通，但我可以回答一些预设的问题。
+  talk: 我是 Efu 开发的摘要生成助理ScoGPT，ScoGPT在静态部署时进行摘要的撰写，并且在访客访问时通过ScoCorrection转译后的文本摘要实现工具。我在这里只负责已经生成的摘要显示，你无法与我直接沟通，但我可以回答一些预设的问题。
   randomPost: true
   report: https://efu.me/
   tips: 此内容根据文章生成，并经过人工审核，仅用于文章内容的解释与总结
@@ -382,11 +379,11 @@ pwa:
   enable: true
   manifest: /manifest.json 
   theme_color: "#ffffff" 
-  mask_icon: /img/pwa/180.png 
-  apple_touch_icon: /img/pwa/180.png 
-  bookmark_icon: /img/pwa/180.png 
-  favicon_32_32: /img/pwa/32.png 
-  favicon_16_16: /img/pwa/16.png 
+  mask_icon: /img/pwa/favicon.ico
+  apple_touch_icon: /img/pwa/favicon.ico
+  bookmark_icon: /img/pwa/favicon.ico
+  favicon_32_32: /img/pwa/favicon_32.ico
+  favicon_16_16: /img/pwa/favicon_16.ico
 
 CDN:
   internal: local
@@ -395,5 +392,3 @@ CDN:
   custom_format: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
   option:
     scoicon_css: https://cdn2.codesign.qq.com/icons/7pOrz0WXB5ZWJPX/latest/iconfont.css
-    waterfall: /js/waterfall.min.js
-    universe_js: /js/universe.min.js

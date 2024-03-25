@@ -3,7 +3,7 @@ links:
     descr: 对主题开发作出贡献的朋友
     type: card
     link_list:
-      - name: Efuo
+      - name: Efu
         link: https://efu.me/
         avatar: https://avatars.githubusercontent.com/u/74389842?v=4
         descr: Be careful and enjoy it.
@@ -35,7 +35,7 @@ links:
     descr: 技术博客
     type: item
     link_list:
-      - name: Efuo
+      - name: Efu
         link: https://efu.me/
         avatar: https://avatars.githubusercontent.com/u/74389842?v=4
         descr: Be careful and enjoy it.
