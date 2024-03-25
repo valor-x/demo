@@ -289,13 +289,13 @@ loading:
   fullpage: true
   pace: true
 
-hightlight:
+highlight:
   enable: true
-  hightlimit: 200
+  limit: 200
   copy: true
   expand: true
-  theme: default
-  color: vscode
+  theme: mac
+  color: github
 
 lightbox: true
 fancybox: true
