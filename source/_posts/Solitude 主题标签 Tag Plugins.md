@@ -14,12 +14,6 @@ sticky: 1
 comment: true
 ---
 
-{% note simple primary %}
-`Solitude 主题` Plugin Tags 部分移植来自店长的 [hexo-butterfly-tag-plugins-plus](https://www.npmjs.com/package/hexo-butterfly-tag-plugins-plus)，转载请注明出处。
-使用方法和配置项基本相同
-
-{% endnote %}
-
 ## 按钮 btn
 
 {% tabs btn %}
